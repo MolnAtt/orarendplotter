@@ -10,6 +10,25 @@ namespace orarend
 {
 	class Program
 	{
+		class DebugConsole 
+		{
+			static public bool debugmode = false;
+			static public void WriteLine(string str)
+			{
+				if (debugmode)
+				{
+					Console.Error.WriteLine(str);
+				}
+			}
+
+			static public void Write(string str)
+			{
+				if (debugmode)
+				{
+					Console.Error.Write(str);
+				}
+			}
+		}
 		/// <summary>
 		/// A tanár objektum: Van neve, tex-re átírt neve. Később: Hol lakik, Mennyit lépcsőzhet, mely emeletekre mehet, heti óraszáma, lyukas óráinak száma, mely osztályokat tanít, mely termekben tanít, ...
 		/// </summary>
@@ -170,14 +189,14 @@ namespace orarend
 			{
 				const string nyomkövetőID = "GetOsztály(sorszám)";
 				nyomkövetés += nyomkövetőID + nyomkövetőjel;
-				Console.Error.WriteLine(nyomkövetés + "Keresem: " + sorszám.ToString());
+				DebugConsole.WriteLine(nyomkövetés + "Keresem: " + sorszám.ToString());
 				Osztály result = null;
 				IEnumerable<Osztály> filtered = osztályok.Where(x => x.sorszám == sorszám);
 				if (filtered.Count() == 1) result = filtered.First();
 				else
 				{
 					string hibaüzenet = nyomkövetés + "BAJ VAN: ezt nem találtam: " + sorszám.ToString();
-					Console.Error.WriteLine(hibaüzenet);
+					DebugConsole.WriteLine(hibaüzenet);
 					Problémák.Add(hibaüzenet);
 				}
 				return result;
@@ -191,14 +210,14 @@ namespace orarend
 			{
 				const string nyomkövetőID = "GetOsztály(évf,szek)";
 				nyomkövetés += nyomkövetőID + nyomkövetőjel;
-				Console.Error.WriteLine(nyomkövetés + "Keresem: " + évf + szek);
+				DebugConsole.WriteLine(nyomkövetés + "Keresem: " + évf + szek);
 				Osztály result = null;
 				IEnumerable<Osztály> filtered = osztályok.Where(x => x.évfolyam == évf && x.szekció == szek);
 				if (filtered.Count() == 1) result = filtered.First();
 				else
 				{
 					string hibaüzenet = nyomkövetés + "BAJ VAN: ezt nem találtam: " + évf + szek;
-					Console.Error.WriteLine(hibaüzenet);
+					DebugConsole.WriteLine(hibaüzenet);
 					Problémák.Add(hibaüzenet);
 				}
 				return result;
@@ -216,7 +235,7 @@ namespace orarend
 				// nyomkövetés
 				const string nyomkövetőID = "AdatImp";
 				nyomkövetés += nyomkövetőID + nyomkövetőjel;
-				Console.Error.WriteLine(nyomkövetés+"("+nyomkövetőID+") indul ...");
+				DebugConsole.WriteLine(nyomkövetés+"("+nyomkövetőID+") indul ...");
 				Dictionary<string, string> nap2int = DB_Beolvas("DB_napok.tsv", 0, 1, nyomkövetés);
 
 				StreamReader beolvaso = new StreamReader(fajlnev);
@@ -235,7 +254,7 @@ namespace orarend
 						terem = termek.Where(t => t.kr == sor[5]).First()
 					};
 					adatbázis.Add(ora);
-					Console.Error.WriteLine(nyomkövetés+": {0}. sor beolvasva", i++);
+					DebugConsole.WriteLine(nyomkövetés + $": {i++}. sor beolvasva");
 				}
 			}
 			
@@ -252,7 +271,7 @@ namespace orarend
 			{
 				const string nyomkövetőID = "TanImp";
 				nyomkövetés += nyomkövetőID + nyomkövetőjel;
-				Console.Error.WriteLine(nyomkövetés + " TanárImport (" + nyomkövetőID + ") indul");
+				DebugConsole.WriteLine(nyomkövetés + " TanárImport (" + nyomkövetőID + ") indul");
 				StreamReader beolvaso = new StreamReader(fajlnev);
 				int i = 0; // nyomkövetés
 				while (!beolvaso.EndOfStream)
@@ -265,10 +284,16 @@ namespace orarend
 						st = sor[2],
 						mg = sor[3],
 					});
-					Console.Error.WriteLine(nyomkövetés+": {0}. tanár beolvasva.", ++i); // nyomkövetés
+					DebugConsole.WriteLine(nyomkövetés + $": {++i}. tanár beolvasva."); // nyomkövetés
 				}
 				beolvaso.Close();
-				Console.Error.WriteLine(nyomkövetés+"Mostantól létezik a tanáradatbázis.");
+				DebugConsole.WriteLine(nyomkövetés + "Mostantól létezik a tanáradatbázis.");
+
+				using (StreamWriter f = new StreamWriter("tanarletszam.tex"))
+				{
+					f.WriteLine($"\\pgfmathsetmacro{{\\tanarletszam}}{{{Órarend.tanárok.Count}}}");
+				}
+				DebugConsole.WriteLine(nyomkövetés + "tanarletszam.tex-be kiírtam a tanárok létszámát.");
 			}
 
 			/// <summary>
@@ -279,7 +304,7 @@ namespace orarend
 			{
 				const string nyomkövetőID = "TerImp";
 				nyomkövetés += nyomkövetőID + nyomkövetőjel;
-				Console.Error.WriteLine(nyomkövetés+" TeremImport ("+nyomkövetőID+") indul");
+				DebugConsole.WriteLine(nyomkövetés+" TeremImport ("+nyomkövetőID+") indul");
 				StreamReader beolvaso = new StreamReader(fajlnev);
 				int i = 0;
 				while (!beolvaso.EndOfStream)
@@ -293,10 +318,10 @@ namespace orarend
 						emelet = int.Parse(sor[3]),
 						szárny = sor[4],
 					});
-					Console.WriteLine(nyomkövetés+": {0}. terem beolvasva.", ++i); // nyomkövetés
+					DebugConsole.WriteLine(nyomkövetés+ $": {++i}. terem beolvasva."); // nyomkövetés
 				}
 				beolvaso.Close();
-				Console.Error.WriteLine(nyomkövetés + "Mostantól létezik a teremadatbázis.");
+				DebugConsole.WriteLine(nyomkövetés + "Mostantól létezik a teremadatbázis.");
 			}
 
 			/// <summary>
@@ -309,7 +334,7 @@ namespace orarend
 				{
 					const string nyomkövetőID = "OszImp";
 					nyomkövetés += nyomkövetőID + nyomkövetőjel;
-					Console.Error.WriteLine(nyomkövetés + "Osztályimport (" + nyomkövetőID + ") indul"); // nyomkövetés
+					DebugConsole.WriteLine(nyomkövetés + "Osztályimport (" + nyomkövetőID + ") indul"); // nyomkövetés
 				}
 
 				StreamReader beolvaso = new StreamReader(fajlnev);
@@ -324,10 +349,10 @@ namespace orarend
 						évfolyam = sor[1].ToUpper(), // Az azonosításhoz mindenképpen nagybetűsítünk! ("NY", "KNY")
 						szekció = sor[2].ToUpper()// Az azonosításhoz mindenképpen nagybetűsítünk! ("A", "F", ...)
 					});
-					Console.Error.WriteLine(nyomkövetés + ": {0}. osztály ({1}) beolvasva.", ++i, sor[2]); // nyomkövetés
+					DebugConsole.WriteLine(nyomkövetés + $": {++i}. osztály ({sor[2]}) beolvasva."); // nyomkövetés
 				}
 				beolvaso.Close();
-				Console.Error.WriteLine(nyomkövetés + "Mostantól létezik az osztályadatbázis.");
+				DebugConsole.WriteLine(nyomkövetés + "Mostantól létezik az osztályadatbázis.");
 			}
 
 			/// <summary>
@@ -340,7 +365,7 @@ namespace orarend
 				// Nyomkövetés
 					const string nyomkövetőID = "str2oszt";
 					nyomkövetés += nyomkövetőID + nyomkövetőjel;
-					Console.Error.WriteLine(nyomkövetés + "str2oszt (" + nyomkövetőID + ") indul"); // nyomkövetés
+					DebugConsole.WriteLine(nyomkövetés + "str2oszt (" + nyomkövetőID + ") indul"); // nyomkövetés
 
 				List<Osztály> osztálylista = new List<Osztály>();
 
@@ -365,10 +390,10 @@ namespace orarend
 				}
 
 				/*nyomkövetés*/
-				Console.WriteLine(nyomkövetés + "A \"{0}\" kódból a következő osztályokat fejtettem vissza:", kód);
+				DebugConsole.WriteLine(nyomkövetés + $"A \"{kód}\" kódból a következő osztályokat fejtettem vissza:");
 				foreach (var item in osztálylista)
 				{
-					Console.WriteLine(nyomkövetés + "évfolyam: {0}, szekció: {1}, név: {2}", item.évfolyam, item.szekció, item.név);
+					DebugConsole.WriteLine(nyomkövetés + $"évfolyam: {item.évfolyam}, szekció: {item.szekció}, név: {item.név}");
 				}
 
 				return osztálylista;
@@ -426,13 +451,13 @@ namespace orarend
 						if (óra.hanyadik < 9) // ez arra való korlát, hogy a Szabados médiája ne akassza ki a rendszert.
 						{
 							
-							Console.Error.Write(nyomkövetés + sor);
+							DebugConsole.Write(nyomkövetés + sor);
 							abkiiro.Write(sor);
 						}
 						else
 						{
 							string hibaüzenet = nyomkövetés + " Túl későn van: " + sor;
-							Console.Error.Write(hibaüzenet);
+							DebugConsole.Write(hibaüzenet);
 							Problémák.Add(hibaüzenet);
 						}
 					}
@@ -477,13 +502,13 @@ namespace orarend
 								"{" + óra.csoport.krétakód + "}\r\n"; //ITT
 						if (óra.hanyadik < 9) // ez arra való korlát, hogy tömbösített médiák és szakkörök ne akasszák ki a rendszert.
 						{							
-							Console.Error.Write(nyomkövetés+sor);
+							DebugConsole.Write(nyomkövetés+sor);
 							abkiiro.Write(sor);
 						}
 						else
 						{
 							string hibaüzenet = nyomkövetés + " Túl későn van: " + sor;
-							Console.Error.Write(hibaüzenet);
+							DebugConsole.Write(hibaüzenet);
 							Problémák.Add(hibaüzenet);
 						}
 					}
@@ -539,7 +564,7 @@ namespace orarend
 					}
 				}
 
-				Console.WriteLine(nyomkövetés + kiirando);
+				DebugConsole.WriteLine(nyomkövetés + kiirando);
 				using (StreamWriter utomkiiro = new StreamWriter("UTEORFLESH.tex"))
 				{
 					utomkiiro.WriteLine(kiirando);
@@ -573,7 +598,7 @@ namespace orarend
 						}
 					}
 				}
-				Console.WriteLine(nyomkövetés+"3D mátrix inicializálva");
+				DebugConsole.WriteLine(nyomkövetés+"3D mátrix inicializálva");
 
 				foreach (Óra óra in adatbázis)
 				{
@@ -587,13 +612,13 @@ namespace orarend
 										 "{" + óra.csoport.csopID + "}" +
 										 "{" + óra.terem.st + "}";
 							DORPreparátum[osztály.sorszám - 1, óra.nap - 1, óra.hanyadik].Add(bele);
-							Console.Error.WriteLine(nyomkövetés + " DOR[" + (osztály.sorszám - 1).ToString() + "," + (óra.nap - 1).ToString() + "," + óra.hanyadik + "] += " + bele);
+							DebugConsole.WriteLine(nyomkövetés + " DOR[" + (osztály.sorszám - 1).ToString() + "," + (óra.nap - 1).ToString() + "," + óra.hanyadik + "] += " + bele);
 						}
 					}
 					else
 					{
 						string hibaüzenet = nyomkövetés + "Kihagytam a következő órát, mert nem fért be: " + óra.tanár.st + ", "+ óra.tantárgy.név + ", " + óra.csoport.sávID + óra.csoport.csopID + ", " + óra.nap.ToString()+ ", " + óra.hanyadik.ToString();
-						Console.Error.WriteLine(hibaüzenet);
+						DebugConsole.WriteLine(hibaüzenet);
 						Problémák.Add(hibaüzenet);
 					}
 				}
@@ -627,7 +652,7 @@ namespace orarend
 						}
 					}
 					GetOsztály(i+1, nyomkövetés).maxtagoltság = max;
-					Console.Error.WriteLine(nyomkövetés + i.ToString() + ". sor (" + GetOsztály(i+1, nyomkövetés)+ ") megmérve, vastagsága: " + max.ToString());
+					DebugConsole.WriteLine(nyomkövetés + i.ToString() + ". sor (" + GetOsztály(i+1, nyomkövetés)+ ") megmérve, vastagsága: " + max.ToString());
 				}
 			}
 
@@ -677,7 +702,7 @@ namespace orarend
 								{
 									string elválasztójel = (orastring == DORPreparátum[sorszám, napszám, óraszám].Last()) ? "" : "\r\n\\\\";
 									cellastring += orastring + "{" + cellavastagsag + "}%" + elválasztójel;
-									Console.Error.Write(nyomkövetés + cellastring);
+									DebugConsole.Write(nyomkövetés + cellastring);
 								}
 								string DORsor = 
 									"\\ora{\\mitrakjonle}" +
@@ -686,7 +711,7 @@ namespace orarend
 										 "{" + óraszám.ToString() + "}" +
 										 "{\\begin{cellatartalom}% \r\n  " + Translate(cellastring, ék2tex) + "%\r\n\\end{cellatartalom}}" +
 									"\r\n";
-								Console.Error.WriteLine(nyomkövetés+" fájlba írom: "+ DORsor);
+								DebugConsole.WriteLine(nyomkövetés+" fájlba írom: "+ DORsor);
 								abkiiro.Write(DORsor);
 							}
 						}
@@ -702,7 +727,7 @@ namespace orarend
 				nyomkövetés += nyomkövetőID + nyomkövetőjel;
 
 				/*A tábla HTML-kódjának elkészítése*/
-				Console.Error.WriteLine(nyomkövetés + "Nekiállok a html-táblának");
+				DebugConsole.WriteLine(nyomkövetés + "Nekiállok a html-táblának");
 
 				string táblastring ="<table>";
 				int t = 1;
@@ -722,11 +747,11 @@ namespace orarend
 				táblastring += Tabolás(--t) + "</thead>";
 				táblastring += Tabolás(t) + "<tbody>";
 
-				Console.Error.WriteLine(nyomkövetés + "table head kész");
+				DebugConsole.WriteLine(nyomkövetés + "table head kész");
 
 				foreach (Osztály osztály in osztályok)
 				{
-					Console.Error.WriteLine(nyomkövetés + osztály.név);
+					DebugConsole.WriteLine(nyomkövetés + osztály.név);
 					táblastring += Tabolás(t)+ "<tr class = \"" + osztály.név + "\">";
 					táblastring += Tabolás(++t) + "<td class=\"osztalycimke\">" + osztály.név +"</td>";
 					for (int nap = 1; nap < 6; nap++)
@@ -751,10 +776,10 @@ namespace orarend
 				}
 				táblastring += Tabolás(t) + "</tbody>";
 				táblastring += Tabolás(t) + "</table>";
-				Console.Error.WriteLine(nyomkövetés + "Kész a html-tábla");
+				DebugConsole.WriteLine(nyomkövetés + "Kész a html-tábla");
 
 				File.WriteAllText("orarend.html", File.ReadAllText("pretable.txt") + táblastring + File.ReadAllText("posttable.txt"));
-				Console.Error.WriteLine(nyomkövetés + "Elkészült az orarend.html");
+				DebugConsole.WriteLine(nyomkövetés + "Elkészült az orarend.html");
 
 			}
 		}
@@ -773,33 +798,17 @@ namespace orarend
 			  pdflatex --enable-write18 --extra-mem-bot=10000000 --synctex=1 DiakNezo.tex
 			  pdflatex --enable-write18 --extra-mem-bot=10000000 --synctex=1 DiakNezoNyomtatott.tex
 			*/
-			switch (fájlnév)
-			{
-				case "TanarNezo3.tex":
-					batfájl = "BuildTanarNezo.bat";
-					break;
-				case "TanarNezo3Nyomtatott.tex":
-					batfájl = "BuildTanarNezoNY.bat";
-					break;
-				case "TeremNezo.tex":
-					batfájl = "BuildTeremNezo.bat";
-					break;
-				case "TeremNezoNyomtatott.tex":
-					batfájl = "BuildTeremNezoNY.bat";
-					break;
-				case "DiakNezo.tex":
-					batfájl = "BuildDiakNezo.bat";
-					break;
-				case "DiakNezoNyomtatott.tex":
-					batfájl = "BuildDiakNezoNY.bat";
-					break;
-				default:
-					batfájl = "rossz fájlnév";
-					break;
 
-			}
-			string hely = "C:\\Users\\MolnarAttila\\Desktop\\rendrakás\\programok\\ORAREND\\orarend\\bin\\Debug";
-			batfájl = hely + "\\" + batfájl;
+			Dictionary<string, string> TexBatSzótár = new Dictionary<string, string>();
+			TexBatSzótár.Add("TanarNezo3.tex", "BuildTanarNezo.bat");
+			TexBatSzótár.Add("TanarNezo3Nyomtatott.tex", "BuildTanarNezoNY.bat");
+			TexBatSzótár.Add("TeremNezo.tex", "BuildTeremNezo.bat");
+			TexBatSzótár.Add("TeremNezoNyomtatott.tex", "BuildTeremNezoNY.bat");
+			TexBatSzótár.Add("DiakNezo.tex", "BuildDiakNezo.bat");
+			TexBatSzótár.Add("DiakNezoNyomtatott.tex", "BuildDiakNezoNY.bat");
+
+			string hely = "C:\\Users\\MolnarAttila\\Desktop\\ORAREND\\orarend\\bin\\Debug";
+			batfájl = hely + "\\" + TexBatSzótár[fájlnév];
 			using (Process process = new Process())
 			{
 				process.StartInfo.UseShellExecute = false;
@@ -815,8 +824,13 @@ namespace orarend
 		}
 		static void Main(string[] args)
 		{
+			Console.WriteLine("Legyen debug-módban? (\'1\': igen, más: nem)");
+			ConsoleKeyInfo answer = Console.ReadKey();
+			DebugConsole.debugmode = answer.KeyChar == '1';
+			Console.WriteLine("\nKis türelem...");
+
 			// nyomkövetés -- nyomkövetés
-				string nyomkövetés = "";
+			string nyomkövetés = "";
 				string nyomkövetőID = "Main";
 				nyomkövetés += nyomkövetőID + nyomkövetőjel;
 			
@@ -848,38 +862,39 @@ namespace orarend
 
 			// teszt// Órarend.str2oszt("knyef,9.d", nyomkövetés);
 
-			Console.WriteLine("===============");
-			Console.WriteLine(" Program vége.");
-			Console.WriteLine("===============");
-			Console.WriteLine(" A következő problémák adódtak: ");
-			Console.WriteLine("===============");
+			DebugConsole.WriteLine("===============");
+			DebugConsole.WriteLine(" Program vége.");
+			DebugConsole.WriteLine("===============");
+			DebugConsole.WriteLine(" A következő problémák adódtak: ");
+			DebugConsole.WriteLine("===============");
 			foreach (var item in Problémák)
 			{
-				Console.Error.WriteLine(item);
+				DebugConsole.WriteLine(item);
 			}
 
-			Console.WriteLine("Vége, nyomj egy gombot!");
+			Console.WriteLine("\nVége, nyomj egy gombot!");
 			Console.ReadKey();
 			// Tesztek:
 			//	string x = "Árvíztűrő tükörfúrógép";
-			//	Console.WriteLine(Translate(x, ék2tex));
+			//	Konzol.WriteLine(Translate(x, ék2tex));
 
-			Console.WriteLine("Hányszor compile-oljam a TANÁROK digitális órarendjét?");
-			int TanárDCompNum = int.Parse(Console.ReadLine());
-			Console.WriteLine("Hányszor compile-oljam a TANÁROK nyomtatható órarendjét?");
-			int TanárPCompNum = int.Parse(Console.ReadLine());
-			Console.WriteLine("Hányszor compile-oljam a TERMEK digitális órarendjét?");
-			int TeremDCompNum = int.Parse(Console.ReadLine());
-			Console.WriteLine("Hányszor compile-oljam a TERMEK nyomtatható órarendjét?");
-			int TeremPCompNum = int.Parse(Console.ReadLine());
-			Console.WriteLine("Hányszor compile-oljam a DIÁKOK digitális órarendjét?");
-			int DiákDCompNum = int.Parse(Console.ReadLine());
-			Console.WriteLine("Hányszor compile-oljam a DIÁKOK nyomtatható órarendjét?");
-			int DiákPCompNum = int.Parse(Console.ReadLine());
+			Console.WriteLine("\nHányszor compile-oljam a TANÁROK digitális órarendjét?");
+			int TanárDCompNum = int.Parse(Console.ReadKey().KeyChar.ToString());
+			Console.WriteLine("\nHányszor compile-oljam a TANÁROK nyomtatható órarendjét?");
+			int TanárPCompNum = int.Parse(Console.ReadKey().KeyChar.ToString());
+			Console.WriteLine("\nHányszor compile-oljam a TERMEK digitális órarendjét?");
+			int TeremDCompNum = int.Parse(Console.ReadKey().KeyChar.ToString());
+			Console.WriteLine("\nHányszor compile-oljam a TERMEK nyomtatható órarendjét?");
+			int TeremPCompNum = int.Parse(Console.ReadKey().KeyChar.ToString());
+			Console.WriteLine("\nHányszor compile-oljam a DIÁKOK digitális órarendjét?");
+			int DiákDCompNum = int.Parse(Console.ReadKey().KeyChar.ToString());
+			Console.WriteLine("\nHányszor compile-oljam a DIÁKOK nyomtatható órarendjét?");
+			int DiákPCompNum = int.Parse(Console.ReadKey().KeyChar.ToString());
 
-			Console.WriteLine("Mehet? (I/...)");
-			if (Console.ReadLine() == "I")
+			Console.WriteLine("\nMehet? ('1': igen, más: nem )");
+			if (Console.ReadKey().KeyChar=='1')
 			{
+				Console.WriteLine();
 				TeX2pdf("TanarNezo3.tex", TanárDCompNum);
 				TeX2pdf("TanarNezo3Nyomtatott.tex", TanárPCompNum);
 				TeX2pdf("TeremNezo.tex", TeremDCompNum);

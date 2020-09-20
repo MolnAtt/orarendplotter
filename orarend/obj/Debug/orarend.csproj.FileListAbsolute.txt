@@ -18,3 +18,9 @@ C:\Users\MolnarAttila\Desktop\rendrakas\programok\ORAREND\orarend\bin\Debug\orar
 C:\Users\MolnarAttila\Desktop\rendrakas\programok\ORAREND\orarend\obj\Debug\orarend.csprojAssemblyReference.cache
 C:\Users\MolnarAttila\Desktop\rendrakas\programok\ORAREND\orarend\obj\Debug\orarend.exe
 C:\Users\MolnarAttila\Desktop\rendrakas\programok\ORAREND\orarend\obj\Debug\orarend.pdb
+C:\Users\MolnarAttila\Desktop\ORAREND\orarend\bin\Debug\orarend.exe.config
+C:\Users\MolnarAttila\Desktop\ORAREND\orarend\bin\Debug\orarend.exe
+C:\Users\MolnarAttila\Desktop\ORAREND\orarend\bin\Debug\orarend.pdb
+C:\Users\MolnarAttila\Desktop\ORAREND\orarend\obj\Debug\orarend.csprojAssemblyReference.cache
+C:\Users\MolnarAttila\Desktop\ORAREND\orarend\obj\Debug\orarend.exe
+C:\Users\MolnarAttila\Desktop\ORAREND\orarend\obj\Debug\orarend.pdb
