@@ -1,0 +1,124 @@
+\usepackage[left = 2.75cm, top = 1cm]{geometry}
+%\usepackage[utf8]{inputenc}
+%\usepackage[utf8]{inputenc}
+%\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{amsfonts}
+\usepackage{ifthen}
+\usepackage{mdframed}
+%\usepackage{amssymb}
+%\usepackage[margin=0.5cm, paper width=100cm, paper height=100cm]{geometry}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{verbatim}
+\usepackage{array}
+\usepackage{booktabs}
+%\usepackage[sc]{mathpazo}
+\usepackage{multirow}
+\usepackage[table]{xcolor}
+\usepackage{datetime}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+\setlength{\heavyrulewidth}{1.5pt}
+\setlength{\abovetopsep}{4pt}
+\renewcommand{\qedsymbol}{$\blacksquare$}
+\newcommand\numberthis{\addtocounter{equation}{1}\tag{\theequation}}
+\setlength{\marginparwidth}{3.5cm}
+\usepackage{graphicx}
+\usepackage[square%round
+, colon]{natbib}
+\setcitestyle{aysep={},yysep={;}}
+\usepackage{capt-of}
+\usepackage{tikz}
+\usepgflibrary{arrows}
+\usetikzlibrary{shapes}
+\usetikzlibrary{calc}
+\usetikzlibrary{decorations}
+\usetikzlibrary{decorations.pathmorphing}
+\usetikzlibrary{decorations.shapes}
+\usetikzlibrary{decorations.pathreplacing}
+\usetikzlibrary{intersections}
+%\frenchspacing
+\title{Órarend}
+\author{Attila Molnár}
+
+\newcommand{\oda}[5][]{\begin{tikzpicture}[remember picture,overlay]
+\node[#1] at ([xshift=#3 cm, yshift=#4 cm]current page.#2){#5};
+\end{tikzpicture}}
+
+
+
+\newcommand{\ora}[3]{
+%1 Nap
+%2 Óra
+%3 Beírandó termek
+	\pgfmathtruncatemacro{\egysucc}{#1+1}
+%	\filldraw[draw=black, ultra thick](BFS#1-#2) rectangle (JFS\egysucc-#2);
+	\node[inner sep=1mm, anchor=north east, scale=1] at (BFS#1-#2) {\scalebox{2}{\begin{minipage}{2 cm}#3\end{minipage}}};
+} % end of \newcommand{ora}
+
+\newcommand{\skeleton}{
+\begin{tikzpicture}[remember picture,overlay]
+		\pgfmathsetmacro\opn{6}
+		\pgfmathsetmacro\szelesseg{4.6} 
+		\pgfmathsetmacro\magassag{3}
+		\pgfmathsetmacro\cimkeszel{0}
+		\pgfmathsetmacro\cimkemag{1}
+
+\coordinate (Csigolya0) at (0,0);
+\coordinate[xshift=-\cimkeszel cm] (evcStart0) at (Csigolya0);
+\pgfmathsetmacro{\teljesszelesseg}{\cimkeszel+5*\szelesseg }
+\coordinate[xshift= \teljesszelesseg cm] (evcEnd0) at (Csigolya0);
+\draw[ultra thick] (evcStart0)--(evcEnd0);
+	
+\foreach \i in {1,...,\opn}
+{
+	\pgfmathtruncatemacro{\preci}{\i-1}
+	\coordinate (Csigolya\i) at ([yshift=-\magassag cm]Csigolya\preci);
+	\coordinate (evcStart\i) at ([yshift=-\magassag cm]evcStart\preci);
+	\coordinate (evcEnd\i)   at ([yshift=-\magassag cm]evcEnd\preci);
+	\path (Csigolya\i)--(Csigolya\preci) 
+		node[anchor=base, inner sep=2mm, midway, left]{\scalebox{4}{\i.}};
+%	\path (evcEnd\i)--(evcEnd\preci) 
+%		node[anchor=base, inner sep=2mm, midway, right, xshift=-\cimkeszel cm]{\scalebox{4}{\i.}};
+}%end of \foreach \i/\tanar in \tanarlista
+
+
+
+%Bal felső és jobb felső sarkok elnevezése
+\foreach \ora in {1,...,\opn}
+{	\pgfmathtruncatemacro{\predora}{\ora-1}
+	\foreach\nap in {1,...,6}
+	{	
+		\coordinate[xshift=\nap*\szelesseg cm] (BFS\nap-\ora) at (Csigolya\predora);
+		\coordinate[xshift=\szelesseg cm] (JFS\nap-\ora) at (BFS\nap-\ora);
+	}%end of \foreach \nap
+}%end of \foreach \ora
+
+% FÜGGŐLEGES VONALAK. Két ciklus egymásban. Az egyik a napokat pakolja, a másik azon belül az órákat.
+% plusz utána a lezárása.
+\foreach \napszam/\napnev in {1/h{\' e}tf{\H o}, 2/kedd, 3/szerda, 4/cs{\" u}t{\" o}rt{\" o}k, 5/p{\' e}ntek}
+	{
+		\pgfmathsetmacro{\honnan}{(\napszam-1)*\szelesseg}
+		\node[anchor=south] at (\honnan + 0.5*\szelesseg,.25*\cimkemag){\scalebox{2.3}{\textsc{\napnev}}};
+		\draw[ultra thick] (\honnan, \cimkemag) 
+									 -- (\honnan, -\opn*\magassag);
+	}
+		\pgfmathsetmacro{\honnan}{(6-1)*\szelesseg}
+		\draw[ultra thick] (\honnan, \cimkemag) 
+									 -- (\honnan, -\opn*\magassag);
+	
+
+\foreach \i in {1,...,\opn} {\draw[ultra thick] (evcStart\i)--(evcEnd\i);}
+
+
+\end{tikzpicture}
+\thispagestyle{empty}}%end of skeleton
+
+\newcommand{\orarend}{
+	\begin{tikzpicture}[remember picture, overlay]
+		\input{UTEORFLESH.tex}
+	\end{tikzpicture}
+}%endof \orarend

@@ -1,0 +1,10 @@
+\documentclass[a3paper]{article}
+\usepackage[left=2.75cm, top=1cm, paper width=135cm, paper height=190cm]{geometry}
+\input{TOR-preambulum3}
+\begin{document}\quad
+
+\vspace{3cm}
+
+\hspace{6cm}\skeleton
+\orarend{1,...,10}
+\end{document}

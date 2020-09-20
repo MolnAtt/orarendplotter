@@ -1,0 +1,12 @@
+\documentclass[a3paper]{article}
+\usepackage[left = 2.75cm, top = 1cm, paper width = 180cm, paper height = 90cm]{geometry}
+\input{DOR-preambulum}
+\begin{document}
+\quad
+
+\vspace{3cm}
+
+
+\hspace{6cm}\skeleton
+\orarend{1,...,25}
+\end{document}

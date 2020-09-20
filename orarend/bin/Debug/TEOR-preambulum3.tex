@@ -1,0 +1,258 @@
+%\usepackage[utf8]{inputenc}
+%\usepackage[utf8]{inputenc}
+%\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{amsfonts}
+\usepackage{ifthen}
+\usepackage{mdframed}
+%\usepackage{amssymb}
+%\usepackage[margin=0.5cm, paper width=100cm, paper height=100cm]{geometry}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{verbatim}
+\usepackage{array}
+\usepackage{booktabs}
+%\usepackage[sc]{mathpazo}
+\usepackage{multirow}
+\usepackage[table]{xcolor}
+\usepackage{datetime}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+\setlength{\heavyrulewidth}{1.5pt}
+\setlength{\abovetopsep}{4pt}
+\renewcommand{\qedsymbol}{$\blacksquare$}
+\newcommand\numberthis{\addtocounter{equation}{1}\tag{\theequation}}
+\setlength{\marginparwidth}{3.5cm}
+\usepackage{graphicx}
+\usepackage[square%round
+, colon]{natbib}
+\setcitestyle{aysep={},yysep={;}}
+\usepackage{capt-of}
+\usepackage{tikz}
+\usepgflibrary{arrows}
+\usetikzlibrary{shapes}
+\usetikzlibrary{calc}
+\usetikzlibrary{decorations}
+\usetikzlibrary{decorations.pathmorphing}
+\usetikzlibrary{decorations.shapes}
+\usetikzlibrary{decorations.pathreplacing}
+\usetikzlibrary{intersections}
+\frenchspacing
+\title{Órarend}
+\author{Attila Molnár}
+
+\newcommand{\oda}[5][]{\begin{tikzpicture}[remember picture,overlay]
+\node[#1] at ([xshift=#3 cm, yshift=#4 cm]current page.#2){#5};
+\end{tikzpicture}}
+
+\input{TEOR-teremlista.tex}
+
+\input{tantargyszinek.tex}
+
+\newcommand{\summag}{85} % ezt már a matlabból, vagy szemre beállítható. Kumulatív összeg, azért.
+\newcommand{\tanarnev}[1]{#1}
+\newcommand{\teremnev}[1]{#1}
+\newcommand{\csoportnev}[1]{\ifthenelse{\equal{#1}{-}}{}{(#1)}}
+\newcommand{\tantargynev}[1]{\textbf{#1}}
+\newenvironment{blokk}{\tabcolsep=.02cm \begin{tabular}{lccl}}{\end{tabular}}
+
+\newcommand{\keretdraw}[1]{\ifthenelse{\equal{#1}{0}}{none}{black}}
+\newcommand{\keretfill}[1]{\ifthenelse{\equal{#1}{0}}{none}{gray!50}}
+\newcommand{\keretline}[1]{\ifthenelse{\equal{#1}{0}}{}{thick}}
+
+\newcommand{\ora}[9]{
+%1 rajzolja-e le
+%2 a tanár száma
+%3 Tantárgy
+%4 Osztály
+%5 Nap
+%6 Óra
+%7 Tanár
+%8 Csoport
+%9 Tanár módosítója (Tanárórarendben itt terem volt, ott volt az utolsoora-e)
+	\ifthenelse{\equal{#1}{#2}}{%csak akkor álljon neki rajzolni, ha az első két argumentum megegyezik. Az első majd egy futó változó lesz egy forciklusban, így tanáronként fog csak plottolni, és nem lesz tex-capacity exceeded.
+	\pgfmathtruncatemacro{\teremsucc}{#2+1}
+	\filldraw[draw=black, ultra thick, fill = #3](BFS#2-#5-#6) rectangle (JFS\teremsucc-#5-#6);
+	% Felső közép: Tanár
+	\path(BFS#2-#5-#6)--(JFS#2-#5-#6)
+	 node[inner sep=1mm, anchor=base, midway, below, scale=1.3] {\textbf{#7}};
+	% Alsó közép: Minden más: Tantárgy(#3), Osztály (#4), csoport (#8)
+	\path(BFS\teremsucc-#5-#6)--(JFS\teremsucc-#5-#6)
+	 node[inner sep=0mm, anchor=base, midway, above, scale=1.1] {\textbf{#4}};
+%	\node[inner sep=1mm, anchor=north west, scale=1] at (BFS#2-#5-#6) {};
+	\node[inner sep=1mm,scale=1, anchor=south west] at (BFS\teremsucc-#5-#6){\textbf{#3}};
+	\node[inner sep=1mm, scale=1, anchor=south east, #9] at (JFS\teremsucc-#5-#6){\ifthenelse{\equal{#8}{-}}{}{\textbf{(#8)}}};
+	}{}% end of \ifthenelse{\equal{#1}{#2}}
+} % end of \newcommand{ora}
+
+\newcommand{\skeleton}{\begin{tikzpicture}[remember picture,overlay]
+		\pgfmathsetmacro\opn{10}
+		\pgfmathsetmacro\szelesseg{3} 
+		\pgfmathsetmacro\evfolyamszelesseg{2}
+		\pgfmathsetmacro\magassag{1.4}
+		\pgfmathsetmacro{\teremletszam}{62}
+		\pgfmathsetmacro{\osztalycimkeszelesseg}{.5*\szelesseg}% Malatinszky a kényes pont
+		\pgfmathsetmacro{\tablaszelesseg}{(\opn+1)*5*\szelesseg}
+		\pgfmathsetmacro\hezag{.1} 
+
+
+
+% Az egész úgy működik, hogy állítható az elején az egyes osztályok sávjainak vastagsága.
+% ez úgy fog megvalósulni, hogy minden vonal "az előző vonalhoz képest" lesz elhelyezve.
+% tehát koordinátákat pakolunk le mindig, és a vonalakat ezek közé húzzuk, a koordináták elhelyezésekor pedig egymásra hivatkozunk. 
+% a koordinátákat pedig ciklussal pakoljuk le.
+
+%Ez a settings.
+
+% Ez pakolja le a VÍZSZINTES VONALAKat és az osztályok neveit. 
+% Mivel relatív megy minden, a nulladik pozíciójával lehet állítani a többit is.
+% asszem azért evc, mert elválasztó vonal. A c-t nem tudom.
+% Csigolyáknak nevezem a hétfői nulladik órák bal felső sarkait. Minden osztályra jut egy csigolya.
+\coordinate (Csigolya0) at (0,0);
+%\node[scale=3] at (Csigolya0){X};
+\coordinate[xshift=-\osztalycimkeszelesseg cm] (evcStart0) at (Csigolya0);
+\pgfmathsetmacro{\teljesszelesseg}{\tablaszelesseg +\osztalycimkeszelesseg-\szelesseg +5*\hezag*\szelesseg }
+\coordinate[xshift= \teljesszelesseg cm] (evcEnd0) at (Csigolya0);
+\draw[ultra thick] (evcStart0)--(evcEnd0);
+	
+\foreach \i/\terem in \teremlista
+{\pgfmathtruncatemacro{\preci}{\i-1}
+ \coordinate (Csigolya\i) at ([yshift=-\magassag cm]Csigolya\preci);
+ \coordinate (evcStart\i) at ([yshift=-\magassag cm]evcStart\preci);
+ \coordinate (evcEnd\i)   at ([yshift=-\magassag cm]evcEnd\preci);
+ \path (Csigolya\i)--(Csigolya\preci) 
+  node[anchor=base, inner sep=2mm, midway, left]{\scalebox{1.4}{\textsc{\terem}}};
+ \path (evcEnd\i)--(evcEnd\preci) 
+	node[anchor=base, inner sep=2mm, midway, right, xshift=-\osztalycimkeszelesseg cm]{\scalebox{1.4}{\textsc{\terem}}};
+}%end of \foreach \i/\tanar in \tanarlista
+
+
+\foreach \i/\j/\cimke/\meret/\kijovetel/\isep in {
+ 0/2/alagsor/.56/1/-1 mm,
+ 2/13/f{\" o}ldszint/1/1/0 mm,
+ 10/13/angol/1/2/0 mm,
+ 13/26/I. emelet/1/1/1 mm,
+ 24/28/olasz/1/2/0 mm,
+ 26/39/II. emelet/1/1/0 mm,
+ 43/47/k{\' e}-bi./1/2/0 mm,
+ 39/46/III. emelet/1/1/0 mm,
+ 46/52/tetőtér/1/1/0 mm,
+ 52/59/testnevelésórák/1/1/0 mm
+% 14/25/olasz/1/1/0 mm,
+% 24/28/\begin{tabular}{c}tanul{\' a}s-\\m{\' o}dszertan\end{tabular}/.5/2/-3 mm,
+% 25/40/angol/1/1/0 mm,
+% 44/46/francia/.56/1/-3 mm,
+% 46/48/spanyol/.56/1/-3 mm,
+% 48/49/orosz/.4/1/-3 mm,
+% 39/44/n{\' e}met/1/1/0 mm,
+% 54/58/informatika/.56/2/-3 mm,
+% 55/73/matematika/1/1/1 mm,
+% 70/74/fizika/1/2/1 mm,
+% 74/81/k{\' e}mia-biol{\' o}gia/1/1/1 mm,
+% 51/54/m{\' e}dia/1/2/-.4 mm,
+% 50/52/rajz/1/1/-.4 mm,
+% 49/50/{\' e}nek/.5/1/0 mm,
+% 81/88/testnevel{\' e}s/1/1/1 mm
+ }
+{%balra
+\coordinate[xshift=-\kijovetel*\evfolyamszelesseg cm ] (SHIFTevcStart\j) at (evcStart\j);
+ \pgfmathsetmacro{\kijovetelcimke}{\kijovetel-1}
+ \coordinate[xshift=-\kijovetelcimke*\evfolyamszelesseg cm ] (SHIFT2evcStart\i) at (evcStart\i);
+ \draw[ultra thick, rounded corners=7mm]  (evcStart\j) -- (SHIFTevcStart\j) |- (evcStart\i) ;
+ \path(SHIFT2evcStart\i) -- (SHIFTevcStart\j) node[midway, rotate=90, scale=3, anchor=center, fill=white, ellipse, inner sep =\isep]{\textsc{\scalebox{\meret}{\cimke}}};
+% jobbra
+\coordinate[xshift=\kijovetel*\evfolyamszelesseg cm ] (SHIFTevcEnd\j) at (evcEnd\j);
+ \coordinate[xshift=\kijovetelcimke*\evfolyamszelesseg cm ] (SHIFT2evcEnd\i) at (evcEnd\i);
+ \draw[ultra thick, rounded corners=10mm]  (evcEnd\j) -- (SHIFTevcEnd\j) |- (evcEnd\i);
+ \path(SHIFT2evcEnd\i) -- (SHIFTevcEnd\j) node[midway, rotate=90, scale=3, anchor=center, fill=white, ellipse, inner sep =\isep]{\textsc{\scalebox{\meret}{\cimke}}};
+}
+
+%Bal felső sarkok elnevezése
+\foreach \terem in {1,...,62}
+{	\pgfmathtruncatemacro{\predterem}{\terem-1}
+			\foreach\nap in {1,...,5}
+	{
+	 \foreach\ora in {0,...,6}
+		{	\pgfmathsetmacro{\eltolas}{((\nap-1)*(\opn+1+\hezag)+\ora)*\szelesseg}
+			\coordinate[xshift=\eltolas cm] (BFS\terem-\nap-\ora) at (Csigolya\predterem);
+			\coordinate[xshift=\szelesseg cm] (JFS\terem-\nap-\ora) at (BFS\terem-\nap-\ora);
+		}%end of \foreach \orak
+	 \pgfmathtruncatemacro{\meddig}{\opn}
+	 \foreach\ora in {7,...,\meddig}
+		{	\pgfmathsetmacro{\eltolashezaggal}{((\nap-1)*(\opn+1+\hezag)+\ora+\hezag)*\szelesseg}
+			\coordinate[xshift=\eltolashezaggal cm] (BFS\terem-\nap-\ora) at (Csigolya\predterem);
+			\coordinate[xshift=\szelesseg cm] (JFS\terem-\nap-\ora) at (BFS\terem-\nap-\ora);
+		}%end of \foreach \orak
+	}%end of \foreach \napok 
+}%end of \foreach terem
+
+% FÜGGŐLEGES VONALAK. Két ciklus egymásban. Az egyik a napokat pakolja, a másik azon belül az órákat.
+% plusz utána a lezárása.
+\pgfmathtruncatemacro{\oszlopszam}{(\opn+1)*6*\szelesseg}
+\foreach \napszam/\napnev in {1/h{\' e}tf{\H o}, 2/kedd, 3/szerda, 4/cs{\" u}t{\" o}rt{\" o}k, 5/p{\' e}ntek}
+	{
+		\pgfmathsetmacro{\honnan}{(\napszam-1)*((\opn+1+\hezag)*\szelesseg)}
+		\node[anchor=center, yshift=2*\szelesseg] at (\honnan + 0.5*\opn*\szelesseg,1.5*\magassag){\scalebox{2.8}{\textsc{\napnev}}};
+		\draw[ultra thick] (\honnan, 2*\magassag) 
+									 -- (\honnan, -\summag);
+
+		\pgfmathsetmacro{\utolsoora}{\honnan+\opn*\szelesseg+\hezag*\szelesseg}
+		\draw[ultra thick] (\honnan, 2*\magassag) 
+									 -- (\utolsoora, 2*\magassag);
+		\draw[ultra thick]  (\utolsoora, 2*\magassag) 
+										-- (\utolsoora, -\summag);
+		\filldraw[fill opacity=.1, draw opacity=1, ultra thick] (\honnan+\szelesseg, 1*\magassag) rectangle (\honnan, -\summag);
+		\pgfmathtruncatemacro{\eddig}{\opn-4}
+		\foreach \oraszam in {1, ..., \eddig}
+			{
+				\draw[ultra thick] (\honnan+\oraszam*\szelesseg, \magassag) 
+												-- (\honnan+\oraszam*\szelesseg, -\summag);
+			}
+		\foreach \oraszam in {0, ..., \eddig}
+			{\node[anchor=center] at (\honnan+\oraszam*\szelesseg+.5*\szelesseg, 0.5*\magassag){\scalebox{2.8}{\oraszam}};}
+	 \draw[ultra thick]  (\honnan+\eddig*\szelesseg+\szelesseg, \magassag) 
+										-- (\honnan+\eddig*\szelesseg+\szelesseg, -\summag);	
+	 \pgfmathtruncatemacro{\ettol}{\opn-3}
+	 \pgfmathtruncatemacro{\eddig}{\opn-1}
+	 \foreach \oraszam in {\ettol, ..., \eddig}
+		{
+			\draw[ultra thick] (\honnan+\oraszam*\szelesseg+\hezag*\szelesseg, \magassag) 
+											-- (\honnan+\oraszam*\szelesseg+\hezag*\szelesseg, -\summag);
+		}
+	 \foreach \oraszam in {\ettol, ..., \eddig}
+			{
+				\node[anchor=center] at 
+					(\honnan+\oraszam*\szelesseg+.5*\szelesseg+\hezag*\szelesseg, 0.5*\magassag)
+					{\scalebox{2.8}{\oraszam}};
+			}
+}
+	
+
+\foreach \i/\terem in \teremlista {\draw[ultra thick] (evcStart\i)--(evcEnd\i);}
+
+\foreach \i/\terem in \teremlista 
+{
+	\foreach \j in {1,2,3,4}
+	{
+		\pgfmathtruncatemacro{\isucc}{\i+1}
+		\pgfmathtruncatemacro{\jsucc}{\j+1}
+		\path (BFS\i-\j-10)--(BFS\isucc-\jsucc-0) 
+			node[inner sep=1mm, anchor=center, midway]{\scalebox{1.1}{\textsc{\terem}}};
+	}
+}
+
+\end{tikzpicture}
+}%end of skeleton
+
+\newcommand{\orarend}[1]{% ott tartottam, hogy remember overlaybe ki kell rakni a skeletont, és a dorflesht egy 1...25-ös ciklusban kell rem-overlayekkel lepakolni.
+% #1: mettől meddig nyomtasson
+
+	\foreach \mitrakjonle in {#1} % Egyedül a TORFLESH.tex-ben van használva ez a változó.
+	{
+	\begin{tikzpicture}[remember picture, overlay]
+		\input{TEORFLESH.tex}
+	\end{tikzpicture}
+	}%endof \foreach \mitrakjonle
+}%endof \orarend

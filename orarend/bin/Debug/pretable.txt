@@ -1,0 +1,9 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Órarend</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="orarend.css">
+</head>
+<body>
+	<header>A Szent László Gimnázium órarendje</header>

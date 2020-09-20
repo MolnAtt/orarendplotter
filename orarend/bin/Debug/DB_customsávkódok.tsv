@@ -1,0 +1,11 @@
+kny	kny.a
+nye	ny.e
+nyf	ny.f
+knye	kny.a,ny.e
+knyf	kny.a,ny.f
+nyef	ny.e,ny.f
+knyef	kny.a,ny.e,ny.f
+oktv	11.abcdef,12.abcdef
+11sáv	10.a,11.bcd
+12sáv	11.a,12.bcd
+mind	knyef,9.abdef,10.abdef,11.abcdef,12.abcdef
