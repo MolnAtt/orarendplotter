@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.8.16)  20 SEP 2020 16:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.8.16)  26 SEP 2020 08:45
 entering extended mode
 **./TanarNezo3.tex
 (TanarNezo3.tex
@@ -1217,7 +1217,7 @@ arNezo3.aux) )
 Here is how much of TeX's memory you used:
  101731 strings out of 492945
  2036606 string characters out of 3135492
- 12720432 words of memory out of 13000000
+ 12720869 words of memory out of 13000000
  104953 multiletter control sequences out of 15000+200000
  536993 words of font info for 36 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1226,7 +1226,7 @@ Here is how much of TeX's memory you used:
 jknappen/ec/dpi600\ecsx1000.pk> <C:\Users\MolnarAttila\AppData\Local\MiKTeX\2.9
 \fonts/pk/ljfour/jknappen/ec/dpi600\ecss1000.pk> <C:\Users\MolnarAttila\AppData
 \Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1000.pk>
-Output written on TanarNezo3.pdf (1 page, 264632 bytes).
+Output written on TanarNezo3.pdf (1 page, 264692 bytes).
 PDF statistics:
  140 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

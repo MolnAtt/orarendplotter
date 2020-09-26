@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.8.16)  20 SEP 2020 14:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.8.16)  26 SEP 2020 08:52
 entering extended mode
 **./DiakNezo.tex
 (DiakNezo.tex
@@ -1314,18 +1314,18 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 {C:/Users/MolnarAttila/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] (Dia
 kNezo.aux) ) 
 Here is how much of TeX's memory you used:
- 53970 strings out of 492945
- 1097777 string characters out of 3135492
- 12534274 words of memory out of 13000000
- 57334 multiletter control sequences out of 15000+200000
+ 53972 strings out of 492945
+ 1097824 string characters out of 3135492
+ 12534903 words of memory out of 13000000
+ 57336 multiletter control sequences out of 15000+200000
  536993 words of font info for 36 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,17n,68p,1049b,2351s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 57i,17n,68p,1049b,2352s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\MolnarAttila\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jk
 nappen/ec/dpi600\ecsx1000.pk> <C:\Users\MolnarAttila\AppData\Local\MiKTeX\2.9\f
 onts/pk/ljfour/jknappen/ec/dpi600\ecss1000.pk> <C:\Users\MolnarAttila\AppData\L
 ocal\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1000.pk>
-Output written on DiakNezo.pdf (1 page, 184898 bytes).
+Output written on DiakNezo.pdf (1 page, 185045 bytes).
 PDF statistics:
  143 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

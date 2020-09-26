@@ -498,8 +498,8 @@ namespace orarend
 								"{" + óra.nap.ToString() + "}" +
 								"{" + óra.hanyadik.ToString() + "}" +
 								"{" + Translate(óra.tanár.st, ék2tex) + "}" +
-								"{" + óra.csoport.csopID + "}" +
-								"{" + óra.csoport.krétakód + "}\r\n"; //ITT
+								"{" + Translate(óra.csoport.csopID, ék2tex) + "}" +
+								"{" + Translate(óra.csoport.krétakód, ék2tex) + "}\r\n"; //ITT
 						if (óra.hanyadik < 9) // ez arra való korlát, hogy tömbösített médiák és szakkörök ne akasszák ki a rendszert.
 						{							
 							DebugConsole.Write(nyomkövetés+sor);
@@ -514,11 +514,16 @@ namespace orarend
 					}
 				}
 
+				using (StreamWriter teremszamkiiro = new StreamWriter("teremszam.tex"))
+				{
+					teremszamkiiro.Write($"\\pgfmathtruncatemacro{{\\teremletszam}}{{{termek.Count}}}");
+				}
+
 				using (StreamWriter futtatokiiro = new StreamWriter("TeremNezo31.tex"))
 				{
 					string parancssor =
 						"\\documentclass[a3paper]{article}" +
-						"\n\\usepackage[left = 2.75cm, top = 1cm, paper width = 135cm, paper height = 190cm]{geometry}" +
+						"\n\\usepackage[left = 2.75cm, top = 1cm, paper width = 185cm, paper height = 90cm]{geometry}" +
 						"\n\\input{TEOR-preambulum3}" +
 						"\n\\begin{document}" +
 						"\n\\quad" +
@@ -531,9 +536,6 @@ namespace orarend
 					futtatokiiro.Write(parancssor);
 				}
 
-
-				//Process.Start("pdflatex TanarNezo3.tex"); 
-				//Process.Start("pdflatex --enable-write18 --extra-mem-bot=10000000 --synctex=1 TanarNezo3.tex");
 			}
 
 			/// <summary>
@@ -802,12 +804,12 @@ namespace orarend
 			Dictionary<string, string> TexBatSzótár = new Dictionary<string, string>();
 			TexBatSzótár.Add("TanarNezo3.tex", "BuildTanarNezo.bat");
 			TexBatSzótár.Add("TanarNezo3Nyomtatott.tex", "BuildTanarNezoNY.bat");
-			TexBatSzótár.Add("TeremNezo.tex", "BuildTeremNezo.bat");
+			TexBatSzótár.Add("TeremNezo31.tex", "BuildTeremNezo.bat");
 			TexBatSzótár.Add("TeremNezoNyomtatott.tex", "BuildTeremNezoNY.bat");
 			TexBatSzótár.Add("DiakNezo.tex", "BuildDiakNezo.bat");
 			TexBatSzótár.Add("DiakNezoNyomtatott.tex", "BuildDiakNezoNY.bat");
-
-			string hely = "C:\\Users\\MolnarAttila\\Desktop\\ORAREND\\orarend\\bin\\Debug";
+			
+			string hely = Directory.GetCurrentDirectory();
 			batfájl = hely + "\\" + TexBatSzótár[fájlnév];
 			using (Process process = new Process())
 			{
@@ -852,7 +854,7 @@ namespace orarend
 			Órarend.AdatbázisImport("DB_kreta.tsv", nyomkövetés);
 
 			Órarend.TanáriÓrarendKészítése(nyomkövetés);
-//			Órarend.TeremÓrarendKészítése(nyomkövetés);
+			Órarend.TeremÓrarendKészítése(nyomkövetés);
 //			Órarend.Üresteremórarend(nyomkövetés);
 
 			Órarend.DiákÓrarendKészítése(nyomkövetés);
@@ -897,7 +899,7 @@ namespace orarend
 				Console.WriteLine();
 				TeX2pdf("TanarNezo3.tex", TanárDCompNum);
 				TeX2pdf("TanarNezo3Nyomtatott.tex", TanárPCompNum);
-				TeX2pdf("TeremNezo.tex", TeremDCompNum);
+				TeX2pdf("TeremNezo31.tex", TeremDCompNum);
 				TeX2pdf("TeremNezoNyomtatott.tex", TeremPCompNum);
 				TeX2pdf("DiakNezo.tex", DiákDCompNum);
 				TeX2pdf("DiakNezoNyomtatott.tex", DiákPCompNum);

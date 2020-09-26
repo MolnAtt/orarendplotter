@@ -13,7 +13,7 @@
 \usepackage{verbatim}
 \usepackage{array}
 \usepackage{booktabs}
-%\usepackage[sc]{mathpazo}
+%\usepackage[sc]{mathpazo}\ora{}
 \usepackage{multirow}
 \usepackage[table]{xcolor}
 \usepackage{datetime}
@@ -51,7 +51,7 @@
 
 \input{tantargyszinek.tex}
 
-\newcommand{\summag}{85} % ezt már a matlabból, vagy szemre beállítható. Kumulatív összeg, azért.
+\newcommand{\summag}{90} % ezt már a matlabból, vagy szemre beállítható. Kumulatív összeg, azért.
 \newcommand{\tanarnev}[1]{#1}
 \newcommand{\teremnev}[1]{#1}
 \newcommand{\csoportnev}[1]{\ifthenelse{\equal{#1}{-}}{}{(#1)}}
@@ -62,7 +62,7 @@
 \newcommand{\keretfill}[1]{\ifthenelse{\equal{#1}{0}}{none}{gray!50}}
 \newcommand{\keretline}[1]{\ifthenelse{\equal{#1}{0}}{}{thick}}
 
-\newcommand{\ora}[9]{
+\newcommand{\ora}[8]{
 %1 rajzolja-e le
 %2 a tanár száma
 %3 Tantárgy
@@ -72,18 +72,19 @@
 %7 Tanár
 %8 Csoport
 %9 Tanár módosítója (Tanárórarendben itt terem volt, ott volt az utolsoora-e)
-	\ifthenelse{\equal{#1}{#2}}{%csak akkor álljon neki rajzolni, ha az első két argumentum megegyezik. Az első majd egy futó változó lesz egy forciklusban, így tanáronként fog csak plottolni, és nem lesz tex-capacity exceeded.
-	\pgfmathtruncatemacro{\teremsucc}{#2+1}
-	\filldraw[draw=black, ultra thick, fill = #3](BFS#2-#5-#6) rectangle (JFS\teremsucc-#5-#6);
-	% Felső közép: Tanár
-	\path(BFS#2-#5-#6)--(JFS#2-#5-#6)
-	 node[inner sep=1mm, anchor=base, midway, below, scale=1.3] {\textbf{#7}};
-	% Alsó közép: Minden más: Tantárgy(#3), Osztály (#4), csoport (#8)
-	\path(BFS\teremsucc-#5-#6)--(JFS\teremsucc-#5-#6)
-	 node[inner sep=0mm, anchor=base, midway, above, scale=1.1] {\textbf{#4}};
-%	\node[inner sep=1mm, anchor=north west, scale=1] at (BFS#2-#5-#6) {};
-	\node[inner sep=1mm,scale=1, anchor=south west] at (BFS\teremsucc-#5-#6){\textbf{#3}};
-	\node[inner sep=1mm, scale=1, anchor=south east, #9] at (JFS\teremsucc-#5-#6){\ifthenelse{\equal{#8}{-}}{}{\textbf{(#8)}}};
+	\ifthenelse{\equal{#1}{#2}}{%csak akkor álljon neki rajzolni, ha az első két argumentum megegyezik. Az első majd egy futó változó lesz egy forciklusban, így termenként fog csak plottolni, és nem lesz tex-capacity exceeded.
+		\pgfmathtruncatemacro{\teremsucc}{#2+1}
+		\filldraw[draw=black, ultra thick, fill = #3](BFS#2-#5-#6) rectangle (JFS\teremsucc-#5-#6);
+		% Felső közép: Tanár
+		\path(BFS#2-#5-#6)--(JFS#2-#5-#6)
+		 node[inner sep=1mm, anchor=base, midway, below, scale=1.3] {\textbf{#7}};
+		% Alsó közép: Minden más: Tantárgy(#3), Osztály (#4), csoport (#8)
+		\path(BFS\teremsucc-#5-#6)--(JFS\teremsucc-#5-#6)
+		 node[inner sep=0mm, anchor=base, midway, above, scale=1.1] {\textbf{#4}};
+	%	\node[inner sep=1mm, anchor=north west, scale=1] at (BFS#2-#5-#6) {};
+		\node[inner sep=1mm,scale=1, anchor=south west] at (BFS\teremsucc-#5-#6){\textbf{#3}};
+		\node[inner sep=1mm, scale=1, anchor=south east%, #9
+		] at (JFS\teremsucc-#5-#6){\ifthenelse{\equal{#8}{-}}{}{\textbf{(#8)}}};
 	}{}% end of \ifthenelse{\equal{#1}{#2}}
 } % end of \newcommand{ora}
 
@@ -92,7 +93,7 @@
 		\pgfmathsetmacro\szelesseg{3} 
 		\pgfmathsetmacro\evfolyamszelesseg{2}
 		\pgfmathsetmacro\magassag{1.4}
-		\pgfmathsetmacro{\teremletszam}{62}
+		\input{teremszam.tex} %\pgfmathsetmacro{\teremletszam}{63} ez lehet, hogy más szám 
 		\pgfmathsetmacro{\osztalycimkeszelesseg}{.5*\szelesseg}% Malatinszky a kényes pont
 		\pgfmathsetmacro{\tablaszelesseg}{(\opn+1)*5*\szelesseg}
 		\pgfmathsetmacro\hezag{.1} 
@@ -130,16 +131,16 @@
 
 
 \foreach \i/\j/\cimke/\meret/\kijovetel/\isep in {
- 0/2/alagsor/.56/1/-1 mm,
- 2/13/f{\" o}ldszint/1/1/0 mm,
- 10/13/angol/1/2/0 mm,
- 13/26/I. emelet/1/1/1 mm,
- 24/28/olasz/1/2/0 mm,
- 26/39/II. emelet/1/1/0 mm,
- 43/47/k{\' e}-bi./1/2/0 mm,
- 39/46/III. emelet/1/1/0 mm,
- 46/52/tetőtér/1/1/0 mm,
- 52/59/testnevelésórák/1/1/0 mm
+ 0/3/alagsor/.56/1/-1 mm,
+ 3/14/f{\" o}ldszint/1/1/0 mm,
+ 11/14/angol/1/2/0 mm,
+ 15/27/I. emelet/1/1/1 mm,
+ 25/29/olasz/1/2/0 mm,
+ 27/40/II. emelet/1/1/0 mm,
+ 44/48/k{\' e}-bi./1/2/0 mm,
+ 40/47/III. emelet/1/1/0 mm,
+ 47/53/tetőtér/1/1/0 mm,
+ 53/61/testnevelésórák/1/1/0 mm
 % 14/25/olasz/1/1/0 mm,
 % 24/28/\begin{tabular}{c}tanul{\' a}s-\\m{\' o}dszertan\end{tabular}/.5/2/-3 mm,
 % 25/40/angol/1/1/0 mm,
@@ -170,7 +171,8 @@
 }
 
 %Bal felső sarkok elnevezése
-\foreach \terem in {1,...,62}
+\pgfmathtruncatemacro\teremletszamsucc{\teremletszam+1}
+\foreach \terem in {1,...,\teremletszamsucc}
 {	\pgfmathtruncatemacro{\predterem}{\terem-1}
 			\foreach\nap in {1,...,5}
 	{

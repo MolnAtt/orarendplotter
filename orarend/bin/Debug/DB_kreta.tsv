@@ -1,7 +1,7 @@
 TANAR	TANTARGY	OSZTALY	NAP	HANYADIK ORA	TEREM	CSOPORT	KRETAKOD
 Dezső Ágnes	mt	10.a	Hétfő	0	tetőtér nyelvi terem	1	matematika 10A/1-ol_DÁ
 Darabánt Emese	mt	nyf	Hétfő	0	I. emelet 30.	szt	matematika NyF/1inf_DE
-Brücknerné Halász Judit	né	11.e	Hétfő	0	német tanári	né	német korrep 11E_BHJ
+Brücknerné Halász Judit	né	11.e	Hétfő	0	földszint 18.	né	német korrep 11E_BHJ
 Failné Sebestyén Ágnes Mária	mt	11.b	Hétfő	0	II. emelet 43.	mt	matematika 11B/1mt_FSÁ
 Gál Anikó Ildikó	né	9.d	Hétfő	0	német terem	né1	német 9/1n_GA (D)
 Nagyné Vas Erika	te	12.d	Hétfő	0	Tesi 3	L	testnevelés 12D/lány-1_NVE
@@ -426,8 +426,8 @@ Fekete Gabriella	mt	12.b	Kedd	2	földszint 17.	A1	matematika 12B/alap1_FG
 Varga Bettina	mt	12.bc	Kedd	2	II. emelet 42.	mt	matematika 12BC/alap2_VB
 Ágoston Enikő	mt	12.bc	Kedd	2	I. emelet 30.	F	matematika fakt 12/3_ÁE (BC)
 Molnár Attila	mt	12.f	Kedd	2	II. emelet 44.	A	matematika 12F/tkinf-alap_MAt
-Hajba László	a	11.e	Kedd	2	tetőtér biológia gyakorló	an6	angol 11/6_HL (E/2)
-Dickerson Willard Wilton	a	11.e	Kedd	2	II. emelet 43.	an5	angol 11/5_DW (E/1)
+Dickerson Willard Wilton	a	11.e	Kedd	2	tetőtér biológia gyakorló	an6	angol 11/6_DW (E/2)
+Hajba László	a	11.e	Kedd	2	II. emelet 43.	an5	angol 11/5_HL (E/1)
 Sótiné Izsák Klára	né	nyef	Kedd	2	angol 1.	né2	német NYEF/2_SIK
 Lissák Bertalan	a	11.bd	Kedd	2	földszint 8.	an2	angol 11/3_LB (BD/2)
 Nagy Katalin	a	11.bd	Kedd	2	angol 3.	an3	angol 11/4_NK (BD/3)
@@ -467,7 +467,7 @@ Ladányi Edina	te	kny	Kedd	3	Tesi 5	L	testnevelés KNy/lány-1_LaE
 Bardóczky Anna Fruzsina	te	kny,9.d	Kedd	3	Tesi 4	L	testnevelés KNy9D/lány-2_BAF
 Hegedűs Attila	te	kny,9.d	Kedd	3	Tesi 6	F	testnevelés KNy9D/fiú_Hat
 Nagy Szilvia	te	9.d	Kedd	3	Tesi 3	L	testnevelés 9D/lány-1_NSz
-Juhász Tamás József	fi	9.e	Kedd	3	III. emelet fizika terem	-	
+Horváth András	fi	9.e	Kedd	3	III. emelet fizika terem	-	
 Szabolcsi Lili	fr	10.a,11.bd	Kedd	3	francia terem	fr	francia 11/1_SzL (9A10BCD)
 Pap Gábor	sp	10.a,11.bd	Kedd	3	spanyol terem	sp2	spanyol 11/2_PG (10A11BD)
 Kassai Zsuzsanna	a	12.cd	Kedd	3	angol 1.	an1	angol 12/4_KZs (CD/1)
@@ -587,7 +587,7 @@ Failné Sebestyén Ágnes Mária	mt	11.b	Kedd	6	II. emelet 43.	mt	matematika 11B
 Krasznay Kinga Mária	ol	11.a	Kedd	6	I. emelet 34.	A2	olasz 11/2 (A/2)_KKM
 Papp László	mé	9.f	Kedd	6	III. emelet töm.kom. terem	tk	média 9F/2tk_PL
 Hegedüs Anna	ol	kny	Kedd	6	II. emelet olasz 1.	ol3	olasz 8óra KNy/3_HA
-Juhász Tamás József	fi	10.e	Kedd	6	II. emelet 48.	-	
+Horváth András	fi	10.e	Kedd	6	II. emelet 48.	-	
 Dr. Juhász Andrea	a	nyef	Kedd	6	angol 3.	an4	angol NYEF/4_JA
 Hegedűs Attila	te	10.f	Kedd	6	Tesi 1	F	testnevelés 10F/fiú_HAt
 Bardóczky Anna Fruzsina	te	10.f	Kedd	6	Tesi 2	L	testnevelés 10F/lány_BAF
@@ -698,8 +698,8 @@ Deák Ferenc	te	12.f	Szerda	1	Tesi 4	F	testnevelés 12F/fiú_DF
 Ladányi Edina	te	12.f	Szerda	1	Tesi 3	L	testnevelés 12F/lány_LaE
 Kerling Etelka	tö	11.f	Szerda	1	földszint 8.	F	történelem fakt 11/4_KE (F)
 Adamis Bence	tö	11.f	Szerda	1	II. emelet 50.	A	történelem 11F/alap_AB
-Hajba László	a	11.e	Szerda	1	tetőtér számítástechnika 3.	an5	angol 11/5_HL (E/1)
-Dickerson Willard Wilton	a	11.e	Szerda	1	földszint 18.	an6	angol 11/6_DW (E/2)
+Dickerson Willard Wilton	a	11.e	Szerda	1	tetőtér számítástechnika 3.	an5	angol 11/5_DW (E/1)
+Hajba László	a	11.e	Szerda	1	földszint 18.	an6	angol 11/6_HL (E/2)
 Szabados Péter	a	9.a,10.d	Szerda	1	I. emelet 31.	an2	angol 10/10_SzaP (9A10D/2)
 Tóth Viktor Csaba	a	9.a,10.d	Szerda	1	II. emelet 43.	an1	angol 10/9_TVA (9A10D/1)
 Jantal-Varga Zoltán	né	10.bd	Szerda	1	német terem	né4	német 10/4_JVZ (BD)
@@ -960,7 +960,7 @@ Failné Sebestyén Ágnes Mária	mt	10.a	Csütörtök	0	I. emelet 39.	1	matemati
 Cservák Andrea Mária	inf	9.b	Csütörtök	0	tetőtér számítástechnika 1.	2	informatika 9B/2_CsA
 Deák Ferenc	te	9.c	Csütörtök	0	Tesi 1	F	testnevelés 9C/fiú_DF
 Bardóczky Anna Fruzsina	te	9.c	Csütörtök	0	Tesi 2	L	testnevelés 9C/lány_BAF
-Juhász Tamás József	fi	11.bf	Csütörtök	0	III. emelet fizika terem	F	fizika fakt 11/1_JT (BF)
+Horváth András	fi	11.bf	Csütörtök	0	III. emelet fizika terem	F	fizika fakt 11/1_JT (BF)
 Sóskuthyné Kovács Erzsébet	ké	11.abde	Csütörtök	0	III. emelet kémia előadó	F	kémia fakt 11/2_SKE (ABDE)
 Dezső Ágnes	mt	11.a	Csütörtök	0	tetőtér nyelvi terem	F	matematika fakt 11/1-ol_DÁ (A)
 Teremy Krisztina Anna	tö	11.de	Csütörtök	0	földszint 9	F	történelem fakt 11/3_TK (DE)
@@ -990,7 +990,7 @@ Pap Gábor	sp	10.ef	Csütörtök	1	spanyol terem	sp1	spanyol 10/1_PG (EF)
 Bellesi Gloria	ol	kny	Kedd	2	könyvtár	ol3	olasz lekt KNy/3_BG
 Deák Ferenc	te	9.c	Csütörtök	1	Tesi 1	F	testnevelés 9C/fiú_DF
 Bardóczky Anna Fruzsina	te	9.c	Csütörtök	1	Tesi 2	L	testnevelés 9C/lány_BAF
-Juhász Tamás József	fi	11.bf	Csütörtök	1	III. emelet fizika terem	F	fizika fakt 11/1_JT (BF)
+Horváth András	fi	11.bf	Csütörtök	1	III. emelet fizika terem	F	fizika fakt 11/1_JT (BF)
 Sóskuthyné Kovács Erzsébet	ké	11.abde	Csütörtök	1	III. emelet kémia előadó	F	kémia fakt 11/2_SKE (ABDE)
 Dezső Ágnes	mt	11.a	Csütörtök	1	tetőtér nyelvi terem	F	matematika fakt 11/1_DÁ (A)
 Teremy Krisztina Anna	tö	11.de	Csütörtök	1	földszint 9	F	történelem fakt 11/3_TK (DE)
@@ -1076,7 +1076,7 @@ Bartha Tiborné	én	9.c	Csütörtök	3	ének terem	-
 Krajnyák Attila János	inf	nyf	Csütörtök	3	tetőtér számítástechnika 1.	szt	informatika NyF/1inf_KA
 Tóth Viktor Csaba	a	nye	Csütörtök	3	II. emelet 41.	1	angol tm NyE/1_TVCs
 Cservák Andrea Mária	inf	nye	Csütörtök	3	tetőtér számítástechnika 3.	2	informatika NyE/2_CsA
-Juhász Tamás József	fi	9.e	Csütörtök	3	III. emelet fizika terem	-	
+Horváth András	fi	9.e	Csütörtök	3	III. emelet fizika terem	-	
 Nagyné Vas Erika	te	9.a	Csütörtök	3	Tesi 3	L	testnevelés 9A/lány-1_NVE
 Ladányi Edina	te	9.a,10.d	Csütörtök	3	Tesi 6	L	testnevelés 9A10D/lány-2_LaE
 Deák Ferenc	te	9.a,10.d	Csütörtök	3	Tesi 4	F	testnevelés 9A10D/fiú_DF
@@ -1255,7 +1255,7 @@ Menyhárt Krisztina	bi	12.c	Csütörtök	7	III. emelet biológia előadó	-
 Szabados Péter	mé	12.f	Csütörtök	7	II. emelet 50.	mé	média 12_SzaP (F/1inf tömb)
 Pató Zoltán	of	10.f	Csütörtök	7	II. emelet 51.	-	
 Ágoston Enikő	mt	kny	Csütörtök	7	matematika terem	1	matematika KNy/1_ÁE
-Juhász Tamás József	fi	10.e	Csütörtök	7	III. emelet fizika terem	-	
+Horváth András	fi	10.e	Csütörtök	7	III. emelet fizika terem	-	
 Bögös Eszter	a	10.b	Csütörtök	7	angol 3.	an1	angol 10/1_BE (B)
 Dickerson Willard Wilton	a	10.bd	Csütörtök	7	angol 2.	an1	angol 10/2_DW (BD/1)
 Bartha Tiborné	ék	11.bdef	Csütörtök	7	ének terem	ék	énekkar
@@ -1571,3 +1571,4 @@ Sárkány Péter	fi	12.bce	Hétfő	8	III. emelet fizika terem	F	fizika fakt 12/1
 Bellesi Gloria	ol	12.a	Csütörtök	5	olasz tanári	k	olasz korrep 12A/Horváth Panna_BG
 Bellesi Gloria	ol	12.a	Péntek	5	olasz tanári	k	olasz korrep 12A/Horváth Panna_BG
 Müller Ágnes	fö	12.a	Hétfő	8	latin terem	ek	célnyelvi földrajz érettségi előkészítő 12A_MA
+Pató Zoltán	ny	10.f	Kedd	8	II. emelet 51.	-	nyelvtan korrepetálás 10F_PZ
