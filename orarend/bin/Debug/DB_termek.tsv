@@ -14,49 +14,50 @@
 14	angol 3.	A.3	0	Kőrösi
 15	francia terem	Fr.	1	Ónodi
 16	spanyol terem	Sp.	1	Ónodi
-17	I. emelet 30.	I.30	1	Ónodi
-18	I. emelet 31.	I.31	1	Ónodi
-19	I. emelet 32.	I.32	1	Ónodi
-20	DÖK szoba	dök	1	Ónodi
-21	I. emelet 33	I.33	1	Ónodi
-22	I. emelet 34.	I.34	1	Ónodi
-23	díszterem	D.	1	Front
-24	matematika terem	M.	1	Kőrösi
-25	I. emelet 39.	I.39	1	Kőrösi
-26	latin terem	L.	1	Kőrösi
-27	olasz 2.	Ol.2	1	Ónodi
-28	II. emelet olasz 1.	Ol.1	2	Kőrösi
-29	olasz tanári	Ol.t	2	Kőrösi
-30	II. emelet orosz terem	II.40	2	Ónodi
-31	II. emelet 41.	II.41	2	Ónodi
-32	II. emelet 42.	II.42	2	Ónodi
-33	II. emelet 43.	II.43	2	Ónodi
-34	II. emelet 44.	II.44	2	Ónodi
-35	II. emelet Kőrösi folyosó	II.	2	Kőrösi
-36	II. emelet 48.	II.48	2	Kőrösi
-37	történelem szertár	tsz	2	Kőrösi
-38	II. emelet 50.	II.50	2	Kőrösi
-39	II. emelet 51.	II.51	2	Kőrösi
-40	II. emelet rajz terem	R.	2	Kőrösi
-41	III. emelet fizika terem	Fiz.	3	Ónodi
-42	Öveges labor 1	L.1	3	Ónodi
-43	III. emelet töm.kom. terem	Tk.	3	Ónodi
-44	könyvtár	Kt.	3	Front
-45	III. emelet kémia előadó	K.ea	3	Kőrösi
-46	III. emelet kémia gyakorló	K.gy	3	Kőrösi
-47	III. emelet biológia előadó	B.ea	3	Kőrösi
-48	tetőtér biológia gyakorló	B.gy	4	Kőrösi
-49	tetőtér számítástechnika 1.	Szt.1	4	Kőrösi
-50	tetőtér számítástechnika 2.	Szt.2	4	Kőrösi
-51	tetőtér számítástechnika 3.	Szt.3	4	Kőrösi
-52	tetőtéri stúdió	Tt.s.	4	Ónodi
-53	tetőtér nyelvi terem	T.2	4	Kőrösi
-54	tornacsarnok	Tt.	0	Testnevelés
-55	Tesi 1	Tt.	0	Testnevelés
-56	Tesi 2	Tt.	0	Testnevelés
-57	Tesi 3	Tt.	0	Testnevelés
-58	Tesi 4	Tt.	0	Testnevelés
-59	Tesi 5	Tt.	0	Testnevelés
-60	Tesi 6	Tt.	0	Testnevelés
-61	tornacsarnok	Tt.	0	Testnevelés
-62	tornaszoba 2	Tt.	0	Testnevelés
+17	spanyol-francia tanári	FS.t	1	Ónodi
+18	I. emelet 30.	I.30	1	Ónodi
+19	I. emelet 31.	I.31	1	Ónodi
+20	I. emelet 32.	I.32	1	Ónodi
+21	DÖK szoba	dök	1	Ónodi
+22	I. emelet 33	I.33	1	Ónodi
+23	I. emelet 34.	I.34	1	Ónodi
+24	díszterem	D.	1	Front
+25	matematika terem	M.	1	Kőrösi
+26	I. emelet 39.	I.39	1	Kőrösi
+27	latin terem	L.	1	Kőrösi
+28	olasz 2.	Ol.2	1	Ónodi
+29	II. emelet olasz 1.	Ol.1	2	Kőrösi
+30	olasz tanári	Ol.t	2	Kőrösi
+31	II. emelet orosz terem	II.40	2	Ónodi
+32	II. emelet 41.	II.41	2	Ónodi
+33	II. emelet 42.	II.42	2	Ónodi
+34	II. emelet 43.	II.43	2	Ónodi
+35	II. emelet 44.	II.44	2	Ónodi
+36	II. emelet Kőrösi folyosó	II.	2	Kőrösi
+37	II. emelet 48.	II.48	2	Kőrösi
+38	történelem szertár	tsz	2	Kőrösi
+39	II. emelet 50.	II.50	2	Kőrösi
+40	II. emelet 51.	II.51	2	Kőrösi
+41	II. emelet rajz terem	R.	2	Kőrösi
+42	III. emelet fizika terem	Fiz.	3	Ónodi
+43	Öveges labor 1	L.1	3	Ónodi
+44	III. emelet töm.kom. terem	Tk.	3	Ónodi
+45	könyvtár	Kt.	3	Front
+46	III. emelet kémia előadó	K.ea	3	Kőrösi
+47	III. emelet kémia gyakorló	K.gy	3	Kőrösi
+48	III. emelet biológia előadó	B.ea	3	Kőrösi
+49	tetőtér biológia gyakorló	B.gy	4	Kőrösi
+50	tetőtér számítástechnika 1.	Szt.1	4	Kőrösi
+51	tetőtér számítástechnika 2.	Szt.2	4	Kőrösi
+52	tetőtér számítástechnika 3.	Szt.3	4	Kőrösi
+53	tetőtéri stúdió	Tt.s.	4	Ónodi
+54	tetőtér nyelvi terem	T.2	4	Kőrösi
+55	tornacsarnok	Tt.	0	Testnevelés
+56	Tesi 1	Tt.	0	Testnevelés
+57	Tesi 2	Tt.	0	Testnevelés
+58	Tesi 3	Tt.	0	Testnevelés
+59	Tesi 4	Tt.	0	Testnevelés
+60	Tesi 5	Tt.	0	Testnevelés
+61	Tesi 6	Tt.	0	Testnevelés
+62	tornacsarnok	Tt.	0	Testnevelés
+63	tornaszoba 2	Tt.	0	Testnevelés

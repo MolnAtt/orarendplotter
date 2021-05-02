@@ -1,349 +1,179 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.8.16)  26 SEP 2020 08:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.5.2)  2 MAY 2021 10:32
 entering extended mode
 **./DiakNezo.tex
 (DiakNezo.tex
-LaTeX2e <2018-12-01>
-("C:\Program Files\MiKTeX 2.9\tex/latex/base\article.cls"
-Document Class: article 2019/08/27 v1.4j Standard LaTeX document class
-("C:\Program Files\MiKTeX 2.9\tex/latex/base\size10.clo"
-File: size10.clo 2019/08/27 v1.4j Standard LaTeX file (size option)
+LaTeX2e <2020-10-01> patch level 4
+L3 programming layer <2021-02-18> xparse <2020-03-03>
+(C:\Program Files\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
+(C:\Program Files\MiKTeX\tex/latex/base\size10.clo
+File: size10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
 )
-\c@part=\count80
-\c@section=\count81
-\c@subsection=\count82
-\c@subsubsection=\count83
-\c@paragraph=\count84
-\c@subparagraph=\count85
-\c@figure=\count86
-\c@table=\count87
-\abovecaptionskip=\skip41
-\belowcaptionskip=\skip42
-\bibindent=\dimen102
+\c@part=\count179
+\c@section=\count180
+\c@subsection=\count181
+\c@subsubsection=\count182
+\c@paragraph=\count183
+\c@subparagraph=\count184
+\c@figure=\count185
+\c@table=\count186
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/geometry\geometry.sty"
-Package: geometry 2018/04/16 v5.8 Page Geometry
+(C:\Users\Attila\AppData\Roaming\MiKTeX\tex/latex/geometry\geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\keyval.sty"
+(C:\Program Files\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks14
+\KV@toks@=\toks15
 )
-("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\ifpdf.sty"
-Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
-)
-("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\ifvtex.sty"
-Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
-Package ifvtex Info: VTeX not detected.
-)
-("C:\Program Files\MiKTeX 2.9\tex/generic/ifxetex\ifxetex.sty"
-Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
-)
-\Gm@cnth=\count88
-\Gm@cntv=\count89
-\c@Gm@tempcnt=\count90
-\Gm@bindingoffset=\dimen103
-\Gm@wd@mp=\dimen104
-\Gm@odd@mp=\dimen105
-\Gm@even@mp=\dimen106
-\Gm@layoutwidth=\dimen107
-\Gm@layoutheight=\dimen108
-\Gm@layouthoffset=\dimen109
-\Gm@layoutvoffset=\dimen110
-\Gm@dimlist=\toks15
+(C:\Program Files\MiKTeX\tex/generic/iftex\ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/geometry\geometry.cfg"))
-(DOR-preambulum.tex ("C:\Program Files\MiKTeX 2.9\tex/latex/base\fontenc.sty"
-Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
-
-("C:\Program Files\MiKTeX 2.9\tex/latex/base\t1enc.def"
-File: t1enc.def 2018/08/11 v2.0j Standard LaTeX file
-LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+(C:\Program Files\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
 ))
-("C:\Program Files\MiKTeX 2.9\tex/generic/babel\babel.sty"
-Package: babel 2019/09/27 3.34 The Babel package
+\Gm@cnth=\count187
+\Gm@cntv=\count188
+\c@Gm@tempcnt=\count189
+\Gm@bindingoffset=\dimen139
+\Gm@wd@mp=\dimen140
+\Gm@odd@mp=\dimen141
+\Gm@even@mp=\dimen142
+\Gm@layoutwidth=\dimen143
+\Gm@layoutheight=\dimen144
+\Gm@layouthoffset=\dimen145
+\Gm@layoutvoffset=\dimen146
+\Gm@dimlist=\toks16
 
-("C:\Program Files\MiKTeX 2.9\tex/generic/babel\switch.def"
-File: switch.def 2019/09/27 3.34 Babel switching mechanism
+(C:\Users\Attila\AppData\Roaming\MiKTeX\tex/latex/geometry\geometry.cfg))
+(DOR-preambulum.tex (C:\Program Files\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2020/08/10 v2.0s Standard LaTeX package
 )
+(C:\Program Files\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2021/01/26 3.53 The Babel package
+
+(C:\Program Files\MiKTeX\tex/generic/babel\babel.def
+File: babel.def 2021/01/26 3.53 Babel common definitions
+\babel@savecnt=\count190
+\U@D=\dimen147
+\l@babelnohyphens=\language79
+
+(C:\Program Files\MiKTeX\tex/generic/babel\txtbabel.def)
+\bbl@readstream=\read2
+)
+\bbl@dirlevel=\count191
+
 *************************************
 * Local config file bblopts.cfg used
 *
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/latex/arabi\bblopts.cfg
+(C:\Program Files\MiKTeX\tex/latex/arabi\bblopts.cfg
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/babel-english\english.ldf"
+(C:\Program Files\MiKTeX\tex/latex/babel-english\english.ldf
 Language: english 2017/06/06 v3.3r English support from the babel system
-
-("C:\Program Files\MiKTeX 2.9\tex/generic/babel\babel.def"
-File: babel.def 2019/09/27 3.34 Babel common definitions
-\babel@savecnt=\count91
-\U@D=\dimen111
-
-("C:\Program Files\MiKTeX 2.9\tex/generic/babel\txtbabel.def")
-\bbl@dirlevel=\count92
-)
-\l@canadian = a dialect from \language\l@american 
-\l@australian = a dialect from \language\l@british 
-\l@newzealand = a dialect from \language\l@british 
+Package babel Info: \l@canadian = using hyphenrules for english
+(babel)             (\language0) on input line 102.
+Package babel Info: \l@australian = using hyphenrules for ukenglish
+(babel)             (\language73) on input line 105.
+Package babel Info: \l@newzealand = using hyphenrules for ukenglish
+(babel)             (\language73) on input line 108.
 ))
-("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\amsfonts.sty"
+(C:\Program Files\MiKTeX\tex/latex/amsfonts\amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\@emptytoks=\toks16
+\@emptytoks=\toks17
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/base\ifthen.sty"
+(C:\Program Files\MiKTeX\tex/latex/base\ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/latex/mdframed\mdframed.s
-ty
+(C:\Users\Attila\AppData\Roaming\MiKTeX\tex/latex/mdframed\mdframed.sty
 Package: mdframed 2013/07/01 1.9b: mdframed
- ("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\kvoptions.sty"
-Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 
-("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\ltxcmds.sty"
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+(C:\Users\Attila\AppData\Roaming\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+
+(C:\Users\Attila\AppData\Roaming\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
 )
-("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\kvsetkeys.sty"
-Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
-
-("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\infwarerr.sty"
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-)
-("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\etexcmds.sty"
-Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
-
-("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\ifluatex.sty"
-Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-))))
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/latex/l3packages/xparse\x
-parse.sty
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/latex/l3kernel\expl3.sty
-Package: expl3 2019-10-02 L3 programming layer (loader) 
-
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/latex/l3kernel\expl3-code
-.tex
-Package: expl3 2019-10-02 L3 programming layer (code)
-\c_max_int=\count93
-\l_tmpa_int=\count94
-\l_tmpb_int=\count95
-\g_tmpa_int=\count96
-\g_tmpb_int=\count97
-\l__seq_internal_a_int=\count98
-\l__seq_internal_b_int=\count99
-\g__kernel_prg_map_int=\count100
-\c__ior_term_noprompt_ior=\count101
-\c_log_iow=\count102
-\l_iow_line_count_int=\count103
-\l__iow_line_target_int=\count104
-\l__iow_one_indent_int=\count105
-\l__iow_indent_int=\count106
-\c_zero_dim=\dimen112
-\c_max_dim=\dimen113
-\l_tmpa_dim=\dimen114
-\l_tmpb_dim=\dimen115
-\g_tmpa_dim=\dimen116
-\g_tmpb_dim=\dimen117
-\c_zero_skip=\skip43
-\c_max_skip=\skip44
-\l_tmpa_skip=\skip45
-\l_tmpb_skip=\skip46
-\g_tmpa_skip=\skip47
-\g_tmpb_skip=\skip48
-\c_zero_muskip=\muskip10
-\c_max_muskip=\muskip11
-\l_tmpa_muskip=\muskip12
-\l_tmpb_muskip=\muskip13
-\g_tmpa_muskip=\muskip14
-\g_tmpb_muskip=\muskip15
-\l_keys_choice_int=\count107
-\l__intarray_loop_int=\count108
-\c__intarray_sp_dim=\dimen118
-\g__intarray_font_int=\count109
-\c__fp_leading_shift_int=\count110
-\c__fp_middle_shift_int=\count111
-\c__fp_trailing_shift_int=\count112
-\c__fp_big_leading_shift_int=\count113
-\c__fp_big_middle_shift_int=\count114
-\c__fp_big_trailing_shift_int=\count115
-\c__fp_Bigg_leading_shift_int=\count116
-\c__fp_Bigg_middle_shift_int=\count117
-\c__fp_Bigg_trailing_shift_int=\count118
-\c__kernel_randint_max_int=\count119
-\g__fp_array_int=\count120
-\l__fp_array_loop_int=\count121
-\l__sort_length_int=\count122
-\l__sort_min_int=\count123
-\l__sort_top_int=\count124
-\l__sort_max_int=\count125
-\l__sort_true_max_int=\count126
-\l__sort_block_int=\count127
-\l__sort_begin_int=\count128
-\l__sort_end_int=\count129
-\l__sort_A_int=\count130
-\l__sort_B_int=\count131
-\l__sort_C_int=\count132
-\l__str_internal_int=\count133
-\c__str_replacement_char_int=\count134
-\l__tl_analysis_normal_int=\count135
-\l__tl_analysis_index_int=\count136
-\l__tl_analysis_nesting_int=\count137
-\l__tl_analysis_type_int=\count138
-\l__regex_internal_a_int=\count139
-\l__regex_internal_b_int=\count140
-\l__regex_internal_c_int=\count141
-\l__regex_balance_int=\count142
-\l__regex_group_level_int=\count143
-\l__regex_mode_int=\count144
-\c__regex_cs_in_class_mode_int=\count145
-\c__regex_cs_mode_int=\count146
-\l__regex_catcodes_int=\count147
-\l__regex_default_catcodes_int=\count148
-\c__regex_catcode_D_int=\count149
-\c__regex_catcode_S_int=\count150
-\c__regex_catcode_L_int=\count151
-\c__regex_catcode_O_int=\count152
-\c__regex_catcode_A_int=\count153
-\c__regex_all_catcodes_int=\count154
-\l__regex_show_lines_int=\count155
-\l__regex_min_state_int=\count156
-\l__regex_max_state_int=\count157
-\l__regex_left_state_int=\count158
-\l__regex_right_state_int=\count159
-\l__regex_capturing_group_int=\count160
-\l__regex_min_pos_int=\count161
-\l__regex_max_pos_int=\count162
-\l__regex_curr_pos_int=\count163
-\l__regex_start_pos_int=\count164
-\l__regex_success_pos_int=\count165
-\l__regex_curr_char_int=\count166
-\l__regex_curr_catcode_int=\count167
-\l__regex_last_char_int=\count168
-\l__regex_case_changed_char_int=\count169
-\l__regex_curr_state_int=\count170
-\l__regex_step_int=\count171
-\l__regex_min_active_int=\count172
-\l__regex_max_active_int=\count173
-\l__regex_replacement_csnames_int=\count174
-\l__regex_match_count_int=\count175
-\l__regex_min_submatch_int=\count176
-\l__regex_submatch_int=\count177
-\l__regex_zeroth_submatch_int=\count178
-\g__regex_trace_regex_int=\count179
-\c_empty_box=\box27
-\l_tmpa_box=\box28
-\l_tmpb_box=\box29
-\g_tmpa_box=\box30
-\g_tmpb_box=\box31
-\l__box_top_dim=\dimen119
-\l__box_bottom_dim=\dimen120
-\l__box_left_dim=\dimen121
-\l__box_right_dim=\dimen122
-\l__box_top_new_dim=\dimen123
-\l__box_bottom_new_dim=\dimen124
-\l__box_left_new_dim=\dimen125
-\l__box_right_new_dim=\dimen126
-\l__box_internal_box=\box32
-\l__coffin_internal_box=\box33
-\l__coffin_internal_dim=\dimen127
-\l__coffin_offset_x_dim=\dimen128
-\l__coffin_offset_y_dim=\dimen129
-\l__coffin_x_dim=\dimen130
-\l__coffin_y_dim=\dimen131
-\l__coffin_x_prime_dim=\dimen132
-\l__coffin_y_prime_dim=\dimen133
-\c_empty_coffin=\box34
-\l__coffin_aligned_coffin=\box35
-\l__coffin_aligned_internal_coffin=\box36
-\l_tmpa_coffin=\box37
-\l_tmpb_coffin=\box38
-\g_tmpa_coffin=\box39
-\g_tmpb_coffin=\box40
-\l__coffin_bounding_shift_dim=\dimen134
-\l__coffin_left_corner_dim=\dimen135
-\l__coffin_right_corner_dim=\dimen136
-\l__coffin_bottom_corner_dim=\dimen137
-\l__coffin_top_corner_dim=\dimen138
-\l__coffin_scaled_total_height_dim=\dimen139
-\l__coffin_scaled_width_dim=\dimen140
-\c__coffin_empty_coffin=\box41
-\l__coffin_display_coffin=\box42
-\l__coffin_display_coord_coffin=\box43
-\l__coffin_display_pole_coffin=\box44
-\l__coffin_display_offset_dim=\dimen141
-\l__coffin_display_x_dim=\dimen142
-\l__coffin_display_y_dim=\dimen143
-\g__char_data_ior=\read1
-
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/latex/l3kernel\l3deprecat
-ion.def
-File: l3deprecation.def 2019-04-06 v L3 Deprecated functions
+(C:\Users\Attila\AppData\Roaming\MiKTeX\tex/generic/kvsetkeys\kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
 ))
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/latex/l3backend\l3backend
--pdfmode.def
-File: l3backend-pdfmode.def 2019-04-06 v L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count180
-\l__pdf_internal_box=\box45
+(C:\Program Files\MiKTeX\tex/latex/l3packages/xparse\xparse.sty
+(C:\Program Files\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2021-02-18 L3 programming layer (loader) 
+
+(C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2021-02-18 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count192
+\l__pdf_internal_box=\box47
 ))
-Package: xparse 2019-05-28 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count181
-\g__xparse_grabber_int=\count182
-\l__xparse_m_args_int=\count183
-\l__xparse_v_nesting_int=\count184
+Package: xparse 2020-10-27 L3 Experimental document command parser
+
+(C:\Program Files\MiKTeX\tex/latex/l3packages/xparse\xparse-generic.tex))
+(C:\Program Files\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count193
 )
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/latex/etoolbox\etoolbox.s
+(C:\Users\Attila\AppData\Roaming\MiKTeX\tex/latex/zref\zref-abspage.sty
+Package: zref-abspage 2020-07-03 v2.32 Module abspage for zref (HO)
+
+(C:\Users\Attila\AppData\Roaming\MiKTeX\tex/latex/zref\zref-base.sty
+Package: zref-base 2020-07-03 v2.32 Module base for zref (HO)
+
+(C:\Users\Attila\AppData\Roaming\MiKTeX\tex/generic/infwarerr\infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+(C:\Users\Attila\AppData\Roaming\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.s
 ty
-Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count185
-) ("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\zref-abspage.sty"
-Package: zref-abspage 2018/11/21 v2.27 Module abspage for zref (HO)
-
-("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\zref-base.sty"
-Package: zref-base 2018/11/21 v2.27 Module base for zref (HO)
-
-("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\kvdefinekeys.sty"
-Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (C:\Program Files\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
 )
-("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\pdftexcmds.sty"
-Package: pdftexcmds 2019/07/25 v0.30 Utility functions of pdfTeX for LuaTeX (HO
-)
-Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\auxhook.sty"
-Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+(C:\Users\Attila\AppData\Roaming\MiKTeX\tex/generic/etexcmds\etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-Package zref Info: New property list: main on input line 759.
-Package zref Info: New property: default on input line 760.
-Package zref Info: New property: page on input line 761.
+(C:\Users\Attila\AppData\Roaming\MiKTeX\tex/latex/auxhook\auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
-("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\atbegshi.sty"
-Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package zref Info: New property list: main on input line 764.
+Package zref Info: New property: default on input line 765.
+Package zref Info: New property: page on input line 766.
 )
-\c@abspage=\count186
-Package zref Info: New property: abspage on input line 62.
+(C:\Program Files\MiKTeX\tex/latex/base\atbegshi-ltx.sty
+Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi packa
+ge
+with kernel methods
 )
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/latex/needspace\needspace
-.sty
+\c@abspage=\count194
+Package zref Info: New property: abspage on input line 66.
+)
+(C:\Users\Attila\AppData\Roaming\MiKTeX\tex/latex/needspace\needspace.sty
 Package: needspace 2010/09/12 v1.3d reserve vertical space
-) ("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\color.sty"
-Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+)
+(C:\Program Files\MiKTeX\tex/latex/graphics\color.sty
+Package: color 2020/02/24 v1.2b Standard LaTeX Color (DPC)
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-cfg\color.cfg"
+(C:\Program Files\MiKTeX\tex/latex/graphics-cfg\color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-def\pdftex.def"
-File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+(C:\Program Files\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 ))
 \mdf@templength=\skip49
-\c@mdf@globalstyle@cnt=\count187
+\c@mdf@globalstyle@cnt=\count195
 \mdf@skipabove@length=\skip50
 \mdf@skipbelow@length=\skip51
 \mdf@leftmargin@length=\skip52
@@ -384,15 +214,14 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 \mdf@subsubtitleinneraboveskip@length=\skip87
 \mdf@subsubtitleinnerbelowskip@length=\skip88
 
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/latex/mdframed\md-frame-0
-.mdf
+(C:\Users\Attila\AppData\Roaming\MiKTeX\tex/latex/mdframed\md-frame-0.mdf
 File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
 )
-\mdf@frametitlebox=\box46
-\mdf@footnotebox=\box47
-\mdf@splitbox@one=\box48
-\mdf@splitbox@two=\box49
-\mdf@splitbox@save=\box50
+\mdf@frametitlebox=\box48
+\mdf@footnotebox=\box49
+\mdf@splitbox@one=\box50
+\mdf@splitbox@two=\box51
+\mdf@splitbox@save=\box52
 \mdfsplitboxwidth=\skip89
 \mdfsplitboxtotalwidth=\skip90
 \mdfsplitboxheight=\skip91
@@ -420,146 +249,146 @@ File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
 \mdf@horizontalspaceofbox=\skip113
 \mdfsubtitleheight=\skip114
 \mdfsubsubtitleheight=\skip115
-\c@mdfcountframes=\count188
+\c@mdfcountframes=\count196
 
 ****** mdframed patching \endmdf@trivlist
 
 ****** -- success******
 
-\mdf@envdepth=\count189
-\c@mdf@env@i=\count190
-\c@mdf@env@ii=\count191
-\c@mdf@zref@counter=\count192
+\mdf@envdepth=\count197
+\c@mdf@env@i=\count198
+\c@mdf@env@ii=\count199
+\c@mdf@zref@counter=\count266
 Package zref Info: New property: mdf@pagevalue on input line 895.
-) ("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsmath.sty"
-Package: amsmath 2019/04/01 v2.17c AMS math features
+)
+(C:\Program Files\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2020/09/23 v2.17i AMS math features
 \@mathmargin=\skip116
 
 For additional information on amsmath, use the `?' option.
-("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amstext.sty"
+(C:\Program Files\MiKTeX\tex/latex/amsmath\amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsgen.sty"
+(C:\Program Files\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks17
-\ex@=\dimen144
+\@emptytoks=\toks18
+\ex@=\dimen148
 ))
-("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsbsy.sty"
+(C:\Program Files\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen145
+\pmbraise@=\dimen149
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsopn.sty"
+(C:\Program Files\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count193
-LaTeX Info: Redefining \frac on input line 227.
-\uproot@=\count194
-\leftroot@=\count195
-LaTeX Info: Redefining \overline on input line 389.
-\classnum@=\count196
-\DOTSCASE@=\count197
-LaTeX Info: Redefining \ldots on input line 486.
-LaTeX Info: Redefining \dots on input line 489.
-LaTeX Info: Redefining \cdots on input line 610.
-\Mathstrutbox@=\box51
-\strutbox@=\box52
-\big@size=\dimen146
-LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
-\macc@depth=\count198
-\c@MaxMatrixCols=\count199
+\inf@bad=\count267
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count268
+\leftroot@=\count269
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count270
+\DOTSCASE@=\count271
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box53
+\strutbox@=\box54
+\big@size=\dimen150
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count272
+\c@MaxMatrixCols=\count273
 \dotsspace@=\muskip16
-\c@parentequation=\count266
-\dspbrk@lvl=\count267
-\tag@help=\toks18
-\row@=\count268
-\column@=\count269
-\maxfields@=\count270
-\andhelp@=\toks19
-\eqnshift@=\dimen147
-\alignsep@=\dimen148
-\tagshift@=\dimen149
-\tagwidth@=\dimen150
-\totwidth@=\dimen151
-\lineht@=\dimen152
-\@envbody=\toks20
+\c@parentequation=\count274
+\dspbrk@lvl=\count275
+\tag@help=\toks19
+\row@=\count276
+\column@=\count277
+\maxfields@=\count278
+\andhelp@=\toks20
+\eqnshift@=\dimen151
+\alignsep@=\dimen152
+\tagshift@=\dimen153
+\tagwidth@=\dimen154
+\totwidth@=\dimen155
+\lineht@=\dimen156
+\@envbody=\toks21
 \multlinegap=\skip117
 \multlinetaggap=\skip118
-\mathdisplay@stack=\toks21
-LaTeX Info: Redefining \[ on input line 2855.
-LaTeX Info: Redefining \] on input line 2856.
+\mathdisplay@stack=\toks22
+LaTeX Info: Redefining \[ on input line 2923.
+LaTeX Info: Redefining \] on input line 2924.
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/amscls\amsthm.sty"
-Package: amsthm 2017/10/31 v2.20.4
-\thm@style=\toks22
-\thm@bodyfont=\toks23
-\thm@headfont=\toks24
-\thm@notefont=\toks25
-\thm@headpunct=\toks26
+(C:\Users\Attila\AppData\Roaming\MiKTeX\tex/latex/amscls\amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks23
+\thm@bodyfont=\toks24
+\thm@headfont=\toks25
+\thm@notefont=\toks26
+\thm@headpunct=\toks27
 \thm@preskip=\skip119
 \thm@postskip=\skip120
 \thm@headsep=\skip121
-\dth@everypar=\toks27
+\dth@everypar=\toks28
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/tools\verbatim.sty"
-Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks28
-\verbatim@line=\toks29
-\verbatim@in@stream=\read2
+(C:\Program Files\MiKTeX\tex/latex/latex-tools\verbatim.sty
+Package: verbatim 2020-07-07 v1.5u LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks29
+\verbatim@line=\toks30
+\verbatim@in@stream=\read3
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/tools\array.sty"
-Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
-\col@sep=\dimen153
-\ar@mcellbox=\box53
-\extrarowheight=\dimen154
-\NC@list=\toks30
+(C:\Program Files\MiKTeX\tex/latex/latex-tools\array.sty
+Package: array 2020/10/01 v2.5c Tabular extension package (FMi)
+\col@sep=\dimen157
+\ar@mcellbox=\box55
+\extrarowheight=\dimen158
+\NC@list=\toks31
 \extratabsurround=\skip122
 \backup@length=\skip123
-\ar@cellbox=\box54
+\ar@cellbox=\box56
 )
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/latex/booktabs\booktabs.s
-ty
-Package: booktabs 2019/10/08 v1.6180339 publication quality tables
-\heavyrulewidth=\dimen155
-\lightrulewidth=\dimen156
-\cmidrulewidth=\dimen157
-\belowrulesep=\dimen158
-\belowbottomsep=\dimen159
-\aboverulesep=\dimen160
-\abovetopsep=\dimen161
-\cmidrulesep=\dimen162
-\cmidrulekern=\dimen163
-\defaultaddspace=\dimen164
-\@cmidla=\count271
-\@cmidlb=\count272
-\@aboverulesep=\dimen165
-\@belowrulesep=\dimen166
-\@thisruleclass=\count273
-\@lastruleclass=\count274
-\@thisrulewidth=\dimen167
-) ("C:\Program Files\MiKTeX 2.9\tex/latex/multirow\multirow.sty"
-Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
+(C:\Users\Attila\AppData\Roaming\MiKTeX\tex/latex/booktabs\booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen159
+\lightrulewidth=\dimen160
+\cmidrulewidth=\dimen161
+\belowrulesep=\dimen162
+\belowbottomsep=\dimen163
+\aboverulesep=\dimen164
+\abovetopsep=\dimen165
+\cmidrulesep=\dimen166
+\cmidrulekern=\dimen167
+\defaultaddspace=\dimen168
+\@cmidla=\count279
+\@cmidlb=\count280
+\@aboverulesep=\dimen169
+\@belowrulesep=\dimen170
+\@thisruleclass=\count281
+\@lastruleclass=\count282
+\@thisrulewidth=\dimen171
+)
+(C:\Users\Attila\AppData\Roaming\MiKTeX\tex/latex/multirow\multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \multirow@colwidth=\skip124
-\multirow@cntb=\count275
+\multirow@cntb=\count283
 \multirow@dima=\skip125
-\bigstrutjot=\dimen168
+\bigstrutjot=\dimen172
 )
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/latex/xcolor\xcolor.sty
+(C:\Program Files\MiKTeX\tex/latex/xcolor\xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-cfg\color.cfg"
+(C:\Program Files\MiKTeX\tex/latex/graphics-cfg\color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
 
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/latex/colortbl\colortbl.s
-ty
-Package: colortbl 2018/12/12 v1.0d Color table columns (DPC)
-\everycr=\toks31
+(C:\Users\Attila\AppData\Roaming\MiKTeX\tex/latex/colortbl\colortbl.sty
+Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
+\everycr=\toks32
 \minrowclearance=\skip126
 )
 LaTeX Info: Redefining \color on input line 709.
-\rownum=\count276
+\rownum=\count284
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
 Package xcolor Info: Model `RGB' extended on input line 1364.
@@ -570,640 +399,571 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/latex/datetime\datetime.s
-ty
+(C:\Users\Attila\AppData\Roaming\MiKTeX\tex/latex/datetime\datetime.sty
 Package: datetime 2015/03/20 v2.60 Date Time Package
 
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/latex/fmtcount\fmtcount.s
-ty
-Package: fmtcount 2017/12/24 v3.05
- ("C:\Program Files\MiKTeX 2.9\tex/latex/xkeyval\xkeyval.sty"
-Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+(C:\Users\Attila\AppData\Roaming\MiKTeX\tex/latex/fmtcount\fmtcount.sty
+Package: fmtcount 2020/01/30 v3.07
 
-("C:\Program Files\MiKTeX 2.9\tex/generic/xkeyval\xkeyval.tex"
-("C:\Program Files\MiKTeX 2.9\tex/generic/xkeyval\xkvutils.tex"
-\XKV@toks=\toks32
-\XKV@tempa@toks=\toks33
+(C:\Program Files\MiKTeX\tex/latex/xkeyval\xkeyval.sty
+Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
+
+(C:\Program Files\MiKTeX\tex/generic/xkeyval\xkeyval.tex
+(C:\Program Files\MiKTeX\tex/generic/xkeyval\xkvutils.tex
+\XKV@toks=\toks33
+\XKV@tempa@toks=\toks34
 )
-\XKV@depth=\count277
+\XKV@depth=\count285
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/latex/fmtcount\fcprefix.s
-ty
+(C:\Users\Attila\AppData\Roaming\MiKTeX\tex/latex/fmtcount\fcprefix.sty
 Package: fcprefix 2012/09/28
 
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/latex/fmtcount\fcnumparse
-r.sty
+(C:\Users\Attila\AppData\Roaming\MiKTeX\tex/latex/fmtcount\fcnumparser.sty
 Package: fcnumparser 2017/06/15
-\fc@digit@counter=\count278
+\fc@digit@counter=\count286
 ))
-\c@padzeroesN=\count279
-\fc@tmpcatcode=\count280
+\c@padzeroesN=\count287
+\fc@tmpcatcode=\count288
 
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/latex/fmtcount\fc-english
-.def
+(C:\Users\Attila\AppData\Roaming\MiKTeX\tex/latex/fmtcount\fc-english.def
 File: fc-english.def 2016/01/12
 )
-\@DT@modctr=\count281
-\@ordinalctr=\count282
-\@orgargctr=\count283
-\@strctr=\count284
-\@tmpstrctr=\count285
-\@DT@loopN=\count286
-\@DT@X=\count287
+\@DT@modctr=\count289
+\@ordinalctr=\count290
+\@orgargctr=\count291
+\@strctr=\count292
+\@tmpstrctr=\count293
+\@DT@loopN=\count294
+\@DT@X=\count295
 )
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/latex/datetime\datetime-d
-efaults.sty
+(C:\Users\Attila\AppData\Roaming\MiKTeX\tex/latex/datetime\datetime-defaults.st
+y
 Package: datetime-defaults 2013/09/10
 )
-\@day=\count288
-\@month=\count289
-\@year=\count290
-\c@HOUR=\count291
-\c@HOURXII=\count292
-\c@MINUTE=\count293
-\c@TOHOUR=\count294
-\c@TOMINUTE=\count295
-\c@SECOND=\count296
-\currenthour=\count297
-\currentminute=\count298
-\currentsecond=\count299
+\@day=\count296
+\@month=\count297
+\@year=\count298
+\c@HOUR=\count299
+\c@HOURXII=\count300
+\c@MINUTE=\count301
+\c@TOHOUR=\count302
+\c@TOMINUTE=\count303
+\c@SECOND=\count304
+\currenthour=\count305
+\currentminute=\count306
+\currentsecond=\count307
 Package datetime Info: No datetime.cfg file found, using default settings on in
 put line 308.
-\@dtctr=\count300
-\dayofyear=\count301
-\dayofweek=\count302
+\@dtctr=\count308
+\dayofyear=\count309
+\dayofweek=\count310
 LaTeX Info: Redefining \today on input line 736.
-\dt@a=\toks34
-\dt@b=\toks35
-)
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/latex/easy\easytable.sty
+\dt@a=\toks35
+\dt@b=\toks36
+) (C:\Users\Attila\AppData\Roaming\MiKTeX\tex/latex/easy\easytable.sty
 Document Style `easytable' v1.0 <2001/06/13>.
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/latex/easy\easy.sty
+(C:\Users\Attila\AppData\Roaming\MiKTeX\tex/latex/easy\easy.sty
 Document Style `easy' v1.1 <2001/05/31>.
 Package: easy 2001/05/31 v1.1
-\@easy@level=\count303
-\@easy@ncol=\count304
-\@easy@nrow=\count305
-\@easy@cnt=\count306
-\@easy@boxviii=\box55
-\@easy@minxviii=\dimen169
-\@easy@minyviii=\dimen170
-\@easy@maxxviii=\dimen171
-\@easy@maxyviii=\dimen172
-\@easy@boxvii=\box56
-\@easy@minxvii=\dimen173
-\@easy@minyvii=\dimen174
-\@easy@maxxvii=\dimen175
-\@easy@maxyvii=\dimen176
-\@easy@boxvi=\box57
-\@easy@minxvi=\dimen177
-\@easy@minyvi=\dimen178
-\@easy@maxxvi=\dimen179
-\@easy@maxyvi=\dimen180
-\@easy@boxv=\box58
-\@easy@minxv=\dimen181
-\@easy@minyv=\dimen182
-\@easy@maxxv=\dimen183
-\@easy@maxyv=\dimen184
-\@easy@boxiv=\box59
-\@easy@minxiv=\dimen185
-\@easy@minyiv=\dimen186
-\@easy@maxxiv=\dimen187
-\@easy@maxyiv=\dimen188
-\@easy@boxiii=\box60
-\@easy@minxiii=\dimen189
-\@easy@minyiii=\dimen190
-\@easy@maxxiii=\dimen191
-\@easy@maxyiii=\dimen192
-\@easy@boxii=\box61
-\@easy@minxii=\dimen193
-\@easy@minyii=\dimen194
-\@easy@maxxii=\dimen195
-\@easy@maxyii=\dimen196
-\@easy@boxi=\box62
-\@easy@minxi=\dimen197
-\@easy@minyi=\dimen198
-\@easy@maxxi=\dimen199
-\@easy@maxyi=\dimen256
-\@easy@hsizexxx=\dimen257
-\@easy@vsizexxx=\dimen258
-\@easy@hsizexxix=\dimen259
-\@easy@vsizexxix=\dimen260
-\@easy@hsizexxviii=\dimen261
-\@easy@vsizexxviii=\dimen262
-\@easy@hsizexxvii=\dimen263
-\@easy@vsizexxvii=\dimen264
-\@easy@hsizexxvi=\dimen265
-\@easy@vsizexxvi=\dimen266
-\@easy@hsizexxv=\dimen267
-\@easy@vsizexxv=\dimen268
-\@easy@hsizexxiv=\dimen269
-\@easy@vsizexxiv=\dimen270
-\@easy@hsizexxiii=\dimen271
-\@easy@vsizexxiii=\dimen272
-\@easy@hsizexxii=\dimen273
-\@easy@vsizexxii=\dimen274
-\@easy@hsizexxi=\dimen275
-\@easy@vsizexxi=\dimen276
-\@easy@hsizexx=\dimen277
-\@easy@vsizexx=\dimen278
-\@easy@hsizexix=\dimen279
-\@easy@vsizexix=\dimen280
-\@easy@hsizexviii=\dimen281
-\@easy@vsizexviii=\dimen282
-\@easy@hsizexvii=\dimen283
-\@easy@vsizexvii=\dimen284
-\@easy@hsizexvi=\dimen285
-\@easy@vsizexvi=\dimen286
-\@easy@hsizexv=\dimen287
-\@easy@vsizexv=\dimen288
-\@easy@hsizexiv=\dimen289
-\@easy@vsizexiv=\dimen290
-\@easy@hsizexiii=\dimen291
-\@easy@vsizexiii=\dimen292
-\@easy@hsizexii=\dimen293
-\@easy@vsizexii=\dimen294
-\@easy@hsizexi=\dimen295
-\@easy@vsizexi=\dimen296
-\@easy@hsizex=\dimen297
-\@easy@vsizex=\dimen298
-\@easy@hsizeix=\dimen299
-\@easy@vsizeix=\dimen300
-\@easy@hsizeviii=\dimen301
-\@easy@vsizeviii=\dimen302
-\@easy@hsizevii=\dimen303
-\@easy@vsizevii=\dimen304
-\@easy@hsizevi=\dimen305
-\@easy@vsizevi=\dimen306
-\@easy@hsizev=\dimen307
-\@easy@vsizev=\dimen308
-\@easy@hsizeiv=\dimen309
-\@easy@vsizeiv=\dimen310
-\@easy@hsizeiii=\dimen311
-\@easy@vsizeiii=\dimen312
-\@easy@hsizeii=\dimen313
-\@easy@vsizeii=\dimen314
-\@easy@hsizei=\dimen315
-\@easy@vsizei=\dimen316
-\@easy@dash@len=\dimen317
-\@easy@dash@sep=\dimen318
+\@easy@level=\count311
+\@easy@ncol=\count312
+\@easy@nrow=\count313
+\@easy@cnt=\count314
+\@easy@boxviii=\box57
+\@easy@minxviii=\dimen173
+\@easy@minyviii=\dimen174
+\@easy@maxxviii=\dimen175
+\@easy@maxyviii=\dimen176
+\@easy@boxvii=\box58
+\@easy@minxvii=\dimen177
+\@easy@minyvii=\dimen178
+\@easy@maxxvii=\dimen179
+\@easy@maxyvii=\dimen180
+\@easy@boxvi=\box59
+\@easy@minxvi=\dimen181
+\@easy@minyvi=\dimen182
+\@easy@maxxvi=\dimen183
+\@easy@maxyvi=\dimen184
+\@easy@boxv=\box60
+\@easy@minxv=\dimen185
+\@easy@minyv=\dimen186
+\@easy@maxxv=\dimen187
+\@easy@maxyv=\dimen188
+\@easy@boxiv=\box61
+\@easy@minxiv=\dimen189
+\@easy@minyiv=\dimen190
+\@easy@maxxiv=\dimen191
+\@easy@maxyiv=\dimen192
+\@easy@boxiii=\box62
+\@easy@minxiii=\dimen193
+\@easy@minyiii=\dimen194
+\@easy@maxxiii=\dimen195
+\@easy@maxyiii=\dimen196
+\@easy@boxii=\box63
+\@easy@minxii=\dimen197
+\@easy@minyii=\dimen198
+\@easy@maxxii=\dimen199
+\@easy@maxyii=\dimen256
+\@easy@boxi=\box64
+\@easy@minxi=\dimen257
+\@easy@minyi=\dimen258
+\@easy@maxxi=\dimen259
+\@easy@maxyi=\dimen260
+\@easy@hsizexxx=\dimen261
+\@easy@vsizexxx=\dimen262
+\@easy@hsizexxix=\dimen263
+\@easy@vsizexxix=\dimen264
+\@easy@hsizexxviii=\dimen265
+\@easy@vsizexxviii=\dimen266
+\@easy@hsizexxvii=\dimen267
+\@easy@vsizexxvii=\dimen268
+\@easy@hsizexxvi=\dimen269
+\@easy@vsizexxvi=\dimen270
+\@easy@hsizexxv=\dimen271
+\@easy@vsizexxv=\dimen272
+\@easy@hsizexxiv=\dimen273
+\@easy@vsizexxiv=\dimen274
+\@easy@hsizexxiii=\dimen275
+\@easy@vsizexxiii=\dimen276
+\@easy@hsizexxii=\dimen277
+\@easy@vsizexxii=\dimen278
+\@easy@hsizexxi=\dimen279
+\@easy@vsizexxi=\dimen280
+\@easy@hsizexx=\dimen281
+\@easy@vsizexx=\dimen282
+\@easy@hsizexix=\dimen283
+\@easy@vsizexix=\dimen284
+\@easy@hsizexviii=\dimen285
+\@easy@vsizexviii=\dimen286
+\@easy@hsizexvii=\dimen287
+\@easy@vsizexvii=\dimen288
+\@easy@hsizexvi=\dimen289
+\@easy@vsizexvi=\dimen290
+\@easy@hsizexv=\dimen291
+\@easy@vsizexv=\dimen292
+\@easy@hsizexiv=\dimen293
+\@easy@vsizexiv=\dimen294
+\@easy@hsizexiii=\dimen295
+\@easy@vsizexiii=\dimen296
+\@easy@hsizexii=\dimen297
+\@easy@vsizexii=\dimen298
+\@easy@hsizexi=\dimen299
+\@easy@vsizexi=\dimen300
+\@easy@hsizex=\dimen301
+\@easy@vsizex=\dimen302
+\@easy@hsizeix=\dimen303
+\@easy@vsizeix=\dimen304
+\@easy@hsizeviii=\dimen305
+\@easy@vsizeviii=\dimen306
+\@easy@hsizevii=\dimen307
+\@easy@vsizevii=\dimen308
+\@easy@hsizevi=\dimen309
+\@easy@vsizevi=\dimen310
+\@easy@hsizev=\dimen311
+\@easy@vsizev=\dimen312
+\@easy@hsizeiv=\dimen313
+\@easy@vsizeiv=\dimen314
+\@easy@hsizeiii=\dimen315
+\@easy@vsizeiii=\dimen316
+\@easy@hsizeii=\dimen317
+\@easy@vsizeii=\dimen318
+\@easy@hsizei=\dimen319
+\@easy@vsizei=\dimen320
+\@easy@dash@len=\dimen321
+\@easy@dash@sep=\dimen322
 )
 Package: easytable 2001/05/31v1.1
-\@tab@size@rule=\dimen319
-\@tab@size@dash=\dimen320
-) ("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\graphicx.sty"
-Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+\@tab@size@rule=\dimen323
+\@tab@size@dash=\dimen324
+) (C:\Program Files\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\graphics.sty"
-Package: graphics 2019/07/20 v1.3b Standard LaTeX Graphics (DPC,SPQR)
+(C:\Program Files\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\trig.sty"
+(C:\Program Files\MiKTeX\tex/latex/graphics\trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-cfg\graphics.cfg"
+(C:\Program Files\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 105.
 )
-\Gin@req@height=\dimen321
-\Gin@req@width=\dimen322
+\Gin@req@height=\dimen325
+\Gin@req@width=\dimen326
 )
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/latex/natbib\natbib.sty
+(C:\Users\Attila\AppData\Roaming\MiKTeX\tex/latex/natbib\natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip127
 \bibsep=\skip128
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count307
+\c@NAT@ctr=\count315
 )
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/latex/capt-of\capt-of.sty
+(C:\Users\Attila\AppData\Roaming\MiKTeX\tex/latex/capt-of\capt-of.sty
 Package: capt-of 2009/12/29 v0.2 standard captions outside of floats
 )
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/frontendlayer\t
-ikz.sty
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/basiclayer\pgf.
-sty
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/utilities\pgfrc
-s.sty
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/utilities\pgf
-util-common.tex
-\pgfutil@everybye=\toks36
-\pgfutil@tempdima=\dimen323
-\pgfutil@tempdimb=\dimen324
+(C:\Program Files\MiKTeX\tex/latex/pgf/frontendlayer\tikz.sty
+(C:\Program Files\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty
+(C:\Program Files\MiKTeX\tex/latex/pgf/utilities\pgfrcs.sty
+(C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfutil-common.tex
+\pgfutil@everybye=\toks37
+\pgfutil@tempdima=\dimen327
+\pgfutil@tempdimb=\dimen328
 
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/utilities\pgf
-util-common-lists.tex))
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/utilities\pgf
-util-latex.def
-\pgfutil@abb=\box63
-
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/latex/ms\everyshi.sty
-Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+(C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfutil-common-lists.tex))
+(C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfutil-latex.def
+\pgfutil@abb=\box65
+)
+(C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfrcs.code.tex
+(C:\Program Files\MiKTeX\tex/generic/pgf\pgf.revision.tex)
+Package: pgfrcs 2020/12/27 v3.1.8b (3.1.8b)
 ))
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/utilities\pgf
-rcs.code.tex
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf\pgf.revision.
-tex)
-Package: pgfrcs 2019/08/03 v3.1.4b (3.1.4b)
+Package: pgf 2020/12/27 v3.1.8b (3.1.8b)
+
+(C:\Program Files\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.sty
+(C:\Program Files\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.sty
+(C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgfsys.code.tex
+Package: pgfsys 2020/12/27 v3.1.8b (3.1.8b)
+
+(C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks38
+\pgfkeys@temptoks=\toks39
+
+(C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks40
 ))
-Package: pgf 2019/08/03 v3.1.4b (3.1.4b)
-
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/basiclayer\pgfc
-ore.sty
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/systemlayer\pgf
-sys.sty
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/systemlayer\p
-gfsys.code.tex
-Package: pgfsys 2019/08/03 v3.1.4b (3.1.4b)
-
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/utilities\pgf
-keys.code.tex
-\pgfkeys@pathtoks=\toks37
-\pgfkeys@temptoks=\toks38
-
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/utilities\pgf
-keysfiltered.code.tex
-\pgfkeys@tmptoks=\toks39
-))
-\pgf@x=\dimen325
-\pgf@y=\dimen326
-\pgf@xa=\dimen327
-\pgf@ya=\dimen328
-\pgf@xb=\dimen329
-\pgf@yb=\dimen330
-\pgf@xc=\dimen331
-\pgf@yc=\dimen332
-\pgf@xd=\dimen333
-\pgf@yd=\dimen334
+\pgf@x=\dimen329
+\pgf@y=\dimen330
+\pgf@xa=\dimen331
+\pgf@ya=\dimen332
+\pgf@xb=\dimen333
+\pgf@yb=\dimen334
+\pgf@xc=\dimen335
+\pgf@yc=\dimen336
+\pgf@xd=\dimen337
+\pgf@yd=\dimen338
 \w@pgf@writea=\write3
-\r@pgf@reada=\read3
-\c@pgf@counta=\count308
-\c@pgf@countb=\count309
-\c@pgf@countc=\count310
-\c@pgf@countd=\count311
-\t@pgf@toka=\toks40
-\t@pgf@tokb=\toks41
-\t@pgf@tokc=\toks42
-\pgf@sys@id@count=\count312
+\r@pgf@reada=\read4
+\c@pgf@counta=\count316
+\c@pgf@countb=\count317
+\c@pgf@countc=\count318
+\c@pgf@countd=\count319
+\t@pgf@toka=\toks41
+\t@pgf@tokb=\toks42
+\t@pgf@tokc=\toks43
+\pgf@sys@id@count=\count320
 
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/systemlayer\p
-gf.cfg
-File: pgf.cfg 2019/08/03 v3.1.4b (3.1.4b)
+(C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgf.cfg
+File: pgf.cfg 2020/12/27 v3.1.8b (3.1.8b)
 )
 Driver file for pgf: pgfsys-pdftex.def
 
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/systemlayer\p
-gfsys-pdftex.def
-File: pgfsys-pdftex.def 2019/08/03 v3.1.4b (3.1.4b)
+(C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2020/12/27 v3.1.8b (3.1.8b)
 
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/systemlayer\p
-gfsys-common-pdf.def
-File: pgfsys-common-pdf.def 2019/08/03 v3.1.4b (3.1.4b)
+(C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2020/12/27 v3.1.8b (3.1.8b)
 )))
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/systemlayer\p
-gfsyssoftpath.code.tex
-File: pgfsyssoftpath.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-\pgfsyssoftpath@smallbuffer@items=\count313
-\pgfsyssoftpath@bigbuffer@items=\count314
+(C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfsyssoftpath@smallbuffer@items=\count321
+\pgfsyssoftpath@bigbuffer@items=\count322
 )
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/systemlayer\p
-gfsysprotocol.code.tex
-File: pgfsysprotocol.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+(C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 ))
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pg
-fcore.code.tex
-Package: pgfcore 2019/08/03 v3.1.4b (3.1.4b)
+(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcore.code.tex
+Package: pgfcore 2020/12/27 v3.1.8b (3.1.8b)
 
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmath.
-code.tex
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathc
-alc.code.tex
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathu
-til.code.tex)
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathp
-arser.code.tex
-\pgfmath@dimen=\dimen335
-\pgfmath@count=\count315
-\pgfmath@box=\box64
-\pgfmath@toks=\toks43
-\pgfmath@stack@operand=\toks44
-\pgfmath@stack@operation=\toks45
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathcalc.code.tex
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathutil.code.tex)
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathparser.code.tex
+\pgfmath@dimen=\dimen339
+\pgfmath@count=\count323
+\pgfmath@box=\box66
+\pgfmath@toks=\toks44
+\pgfmath@stack@operand=\toks45
+\pgfmath@stack@operation=\toks46
 )
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathf
-unctions.code.tex
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathf
-unctions.basic.code.tex)
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathf
-unctions.trigonometric.code.tex)
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathf
-unctions.random.code.tex)
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathf
-unctions.comparison.code.tex)
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathf
-unctions.base.code.tex)
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathf
-unctions.round.code.tex)
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathf
-unctions.misc.code.tex)
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathf
-unctions.integerarithmetics.code.tex)))
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathf
-loat.code.tex
-\c@pgfmathroundto@lastzeros=\count316
-))
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfint.c
-ode.tex)
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pg
-fcorepoints.code.tex
-File: pgfcorepoints.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-\pgf@picminx=\dimen336
-\pgf@picmaxx=\dimen337
-\pgf@picminy=\dimen338
-\pgf@picmaxy=\dimen339
-\pgf@pathminx=\dimen340
-\pgf@pathmaxx=\dimen341
-\pgf@pathminy=\dimen342
-\pgf@pathmaxy=\dimen343
-\pgf@xx=\dimen344
-\pgf@xy=\dimen345
-\pgf@yx=\dimen346
-\pgf@yy=\dimen347
-\pgf@zx=\dimen348
-\pgf@zy=\dimen349
-)
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pg
-fcorepathconstruct.code.tex
-File: pgfcorepathconstruct.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-\pgf@path@lastx=\dimen350
-\pgf@path@lasty=\dimen351
-)
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pg
-fcorepathusage.code.tex
-File: pgfcorepathusage.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-\pgf@shorten@end@additional=\dimen352
-\pgf@shorten@start@additional=\dimen353
-)
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pg
-fcorescopes.code.tex
-File: pgfcorescopes.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-\pgfpic=\box65
-\pgf@hbox=\box66
-\pgf@layerbox@main=\box67
-\pgf@picture@serial@count=\count317
-)
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pg
-fcoregraphicstate.code.tex
-File: pgfcoregraphicstate.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-\pgflinewidth=\dimen354
-)
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pg
-fcoretransformations.code.tex
-File: pgfcoretransformations.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-\pgf@pt@x=\dimen355
-\pgf@pt@y=\dimen356
-\pgf@pt@temp=\dimen357
-)
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pg
-fcorequick.code.tex
-File: pgfcorequick.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-)
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pg
-fcoreobjects.code.tex
-File: pgfcoreobjects.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-)
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pg
-fcorepathprocessing.code.tex
-File: pgfcorepathprocessing.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-)
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pg
-fcorearrows.code.tex
-File: pgfcorearrows.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-\pgfarrowsep=\dimen358
-)
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pg
-fcoreshade.code.tex
-File: pgfcoreshade.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-\pgf@max=\dimen359
-\pgf@sys@shading@range@num=\count318
-\pgf@shadingcount=\count319
-)
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pg
-fcoreimage.code.tex
-File: pgfcoreimage.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.code.tex
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.basic.code.tex)
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.trigonometric.co
+de.tex)
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.random.code.tex)
 
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pg
-fcoreexternal.code.tex
-File: pgfcoreexternal.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-\pgfexternal@startupbox=\box68
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.comparison.code.
+tex)
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.base.code.tex)
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.round.code.tex)
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.misc.code.tex)
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.integerarithmeti
+cs.code.tex)))
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count324
 ))
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pg
-fcorelayers.code.tex
-File: pgfcorelayers.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfint.code.tex)
+(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@picminx=\dimen340
+\pgf@picmaxx=\dimen341
+\pgf@picminy=\dimen342
+\pgf@picmaxy=\dimen343
+\pgf@pathminx=\dimen344
+\pgf@pathmaxx=\dimen345
+\pgf@pathminy=\dimen346
+\pgf@pathmaxy=\dimen347
+\pgf@xx=\dimen348
+\pgf@xy=\dimen349
+\pgf@yx=\dimen350
+\pgf@yy=\dimen351
+\pgf@zx=\dimen352
+\pgf@zy=\dimen353
 )
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pg
-fcoretransparency.code.tex
-File: pgfcoretransparency.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathconstruct.code.t
+ex
+File: pgfcorepathconstruct.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@path@lastx=\dimen354
+\pgf@path@lasty=\dimen355
 )
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pg
-fcorepatterns.code.tex
-File: pgfcorepatterns.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@shorten@end@additional=\dimen356
+\pgf@shorten@start@additional=\dimen357
 )
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pg
-fcorerdf.code.tex
-File: pgfcorerdf.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfpic=\box67
+\pgf@hbox=\box68
+\pgf@layerbox@main=\box69
+\pgf@picture@serial@count=\count325
+)
+(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoregraphicstate.code.te
+x
+File: pgfcoregraphicstate.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgflinewidth=\dimen358
+)
+(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransformations.code
+.tex
+File: pgfcoretransformations.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@pt@x=\dimen359
+\pgf@pt@y=\dimen360
+\pgf@pt@temp=\dimen361
+) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)
+(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathprocessing.code.
+tex
+File: pgfcorepathprocessing.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfarrowsep=\dimen362
+) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@max=\dimen363
+\pgf@sys@shading@range@num=\count326
+\pgf@shadingcount=\count327
+)
+(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+
+(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfexternal@startupbox=\box70
+))
+(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)
+(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransparency.code.te
+x
+File: pgfcoretransparency.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 )))
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/modules\pgfmo
-duleshapes.code.tex
-File: pgfmoduleshapes.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-\pgfnodeparttextbox=\box69
+(C:\Program Files\MiKTeX\tex/generic/pgf/modules\pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfnodeparttextbox=\box71
 )
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/modules\pgfmo
-duleplot.code.tex
-File: pgfmoduleplot.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+(C:\Program Files\MiKTeX\tex/generic/pgf/modules\pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 )
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/compatibility\p
-gfcomp-version-0-65.sty
-Package: pgfcomp-version-0-65 2019/08/03 v3.1.4b (3.1.4b)
-\pgf@nodesepstart=\dimen360
-\pgf@nodesepend=\dimen361
+(C:\Program Files\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@nodesepstart=\dimen364
+\pgf@nodesepend=\dimen365
 )
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/compatibility\p
-gfcomp-version-1-18.sty
-Package: pgfcomp-version-1-18 2019/08/03 v3.1.4b (3.1.4b)
+(C:\Program Files\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2020/12/27 v3.1.8b (3.1.8b)
+)) (C:\Program Files\MiKTeX\tex/latex/pgf/utilities\pgffor.sty
+(C:\Program Files\MiKTeX\tex/latex/pgf/utilities\pgfkeys.sty
+(C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex))
+(C:\Program Files\MiKTeX\tex/latex/pgf/math\pgfmath.sty
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex))
+(C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgffor.code.tex
+Package: pgffor 2020/12/27 v3.1.8b (3.1.8b)
+
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex)
+\pgffor@iter=\dimen366
+\pgffor@skip=\dimen367
+\pgffor@stack=\toks47
+\pgffor@toks=\toks48
 ))
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/utilities\pgffo
-r.sty
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/utilities\pgfke
-ys.sty
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/utilities\pgf
-keys.code.tex))
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/math\pgfmath.st
-y
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmath.
-code.tex))
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/utilities\pgf
-for.code.tex
-Package: pgffor 2019/08/03 v3.1.4b (3.1.4b)
+(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz\tikz.code.tex
+Package: tikz 2020/12/27 v3.1.8b (3.1.8b)
 
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmath.
-code.tex)
-\pgffor@iter=\dimen362
-\pgffor@skip=\dimen363
-\pgffor@stack=\toks46
-\pgffor@toks=\toks47
-))
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/frontendlayer
-/tikz\tikz.code.tex
-Package: tikz 2019/08/03 v3.1.4b (3.1.4b)
-
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/libraries\pgf
-libraryplothandlers.code.tex
-File: pgflibraryplothandlers.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-\pgf@plot@mark@count=\count320
-\pgfplotmarksize=\dimen364
+(C:\Program Files\MiKTeX\tex/generic/pgf/libraries\pgflibraryplothandlers.code.
+tex
+File: pgflibraryplothandlers.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@plot@mark@count=\count328
+\pgfplotmarksize=\dimen368
 )
-\tikz@lastx=\dimen365
-\tikz@lasty=\dimen366
-\tikz@lastxsaved=\dimen367
-\tikz@lastysaved=\dimen368
-\tikz@lastmovetox=\dimen369
-\tikz@lastmovetoy=\dimen370
-\tikzleveldistance=\dimen371
-\tikzsiblingdistance=\dimen372
-\tikz@figbox=\box70
-\tikz@figbox@bg=\box71
-\tikz@tempbox=\box72
-\tikz@tempbox@bg=\box73
-\tikztreelevel=\count321
-\tikznumberofchildren=\count322
-\tikznumberofcurrentchild=\count323
-\tikz@fig@count=\count324
-
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/modules\pgfmo
-dulematrix.code.tex
-File: pgfmodulematrix.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-\pgfmatrixcurrentrow=\count325
-\pgfmatrixcurrentcolumn=\count326
-\pgf@matrix@numberofcolumns=\count327
+\tikz@lastx=\dimen369
+\tikz@lasty=\dimen370
+\tikz@lastxsaved=\dimen371
+\tikz@lastysaved=\dimen372
+\tikz@lastmovetox=\dimen373
+\tikz@lastmovetoy=\dimen374
+\tikzleveldistance=\dimen375
+\tikzsiblingdistance=\dimen376
+\tikz@figbox=\box72
+\tikz@figbox@bg=\box73
+\tikz@tempbox=\box74
+\tikz@tempbox@bg=\box75
+\tikztreelevel=\count329
+\tikznumberofchildren=\count330
+\tikznumberofcurrentchild=\count331
+\tikz@fig@count=\count332
+ (C:\Program Files\MiKTeX\tex/generic/pgf/modules\pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfmatrixcurrentrow=\count333
+\pgfmatrixcurrentcolumn=\count334
+\pgf@matrix@numberofcolumns=\count335
 )
-\tikz@expandcount=\count328
+\tikz@expandcount=\count336
 
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/frontendlayer
-/tikz/libraries\tikzlibrarytopaths.code.tex
-File: tikzlibrarytopaths.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
+rytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 )))
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/libraries\pgf
-libraryarrows.code.tex
-File: pgflibraryarrows.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-\arrowsize=\dimen373
+(C:\Program Files\MiKTeX\tex/generic/pgf/libraries\pgflibraryarrows.code.tex
+File: pgflibraryarrows.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\arrowsize=\dimen377
 )
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/frontendlayer
-/tikz/libraries\tikzlibraryshapes.code.tex
-File: tikzlibraryshapes.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
+ryshapes.code.tex
+File: tikzlibraryshapes.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/frontendlayer
-/tikz/libraries\tikzlibraryshapes.geometric.code.tex
-File: tikzlibraryshapes.geometric.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
+ryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/libraries/sha
-pes\pgflibraryshapes.geometric.code.tex
-File: pgflibraryshapes.geometric.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+(C:\Program Files\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.geom
+etric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 ))
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/frontendlayer
-/tikz/libraries\tikzlibraryshapes.misc.code.tex
-File: tikzlibraryshapes.misc.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
+ryshapes.misc.code.tex
+File: tikzlibraryshapes.misc.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/libraries/sha
-pes\pgflibraryshapes.misc.code.tex
-File: pgflibraryshapes.misc.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+(C:\Program Files\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.misc
+.code.tex
+File: pgflibraryshapes.misc.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 ))
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/frontendlayer
-/tikz/libraries\tikzlibraryshapes.symbols.code.tex
-File: tikzlibraryshapes.symbols.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
+ryshapes.symbols.code.tex
+File: tikzlibraryshapes.symbols.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/libraries/sha
-pes\pgflibraryshapes.symbols.code.tex
-File: pgflibraryshapes.symbols.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+(C:\Program Files\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.symb
+ols.code.tex
+File: pgflibraryshapes.symbols.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 ))
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/frontendlayer
-/tikz/libraries\tikzlibraryshapes.arrows.code.tex
-File: tikzlibraryshapes.arrows.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
+ryshapes.arrows.code.tex
+File: tikzlibraryshapes.arrows.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/libraries/sha
-pes\pgflibraryshapes.arrows.code.tex
-File: pgflibraryshapes.arrows.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+(C:\Program Files\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.arro
+ws.code.tex
+File: pgflibraryshapes.arrows.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 ))
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/frontendlayer
-/tikz/libraries\tikzlibraryshapes.callouts.code.tex
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/libraries/sha
-pes\pgflibraryshapes.callouts.code.tex))
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/frontendlayer
-/tikz/libraries\tikzlibraryshapes.multipart.code.tex
-File: tikzlibraryshapes.multipart.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
+ryshapes.callouts.code.tex
+(C:\Program Files\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.call
+outs.code.tex))
+(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
+ryshapes.multipart.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/libraries/sha
-pes\pgflibraryshapes.multipart.code.tex
-File: pgflibraryshapes.multipart.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-\pgfnodepartlowerbox=\box74
-\pgfnodeparttwobox=\box75
-\pgfnodepartthreebox=\box76
-\pgfnodepartfourbox=\box77
-\pgfnodeparttwentybox=\box78
-\pgfnodepartnineteenbox=\box79
-\pgfnodeparteighteenbox=\box80
-\pgfnodepartseventeenbox=\box81
-\pgfnodepartsixteenbox=\box82
-\pgfnodepartfifteenbox=\box83
-\pgfnodepartfourteenbox=\box84
-\pgfnodepartthirteenbox=\box85
-\pgfnodeparttwelvebox=\box86
-\pgfnodepartelevenbox=\box87
-\pgfnodeparttenbox=\box88
-\pgfnodepartninebox=\box89
-\pgfnodeparteightbox=\box90
-\pgfnodepartsevenbox=\box91
-\pgfnodepartsixbox=\box92
-\pgfnodepartfivebox=\box93
+(C:\Program Files\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.mult
+ipart.code.tex
+File: pgflibraryshapes.multipart.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfnodepartlowerbox=\box76
+\pgfnodeparttwobox=\box77
+\pgfnodepartthreebox=\box78
+\pgfnodepartfourbox=\box79
+\pgfnodeparttwentybox=\box80
+\pgfnodepartnineteenbox=\box81
+\pgfnodeparteighteenbox=\box82
+\pgfnodepartseventeenbox=\box83
+\pgfnodepartsixteenbox=\box84
+\pgfnodepartfifteenbox=\box85
+\pgfnodepartfourteenbox=\box86
+\pgfnodepartthirteenbox=\box87
+\pgfnodeparttwelvebox=\box88
+\pgfnodepartelevenbox=\box89
+\pgfnodeparttenbox=\box90
+\pgfnodepartninebox=\box91
+\pgfnodeparteightbox=\box92
+\pgfnodepartsevenbox=\box93
+\pgfnodepartsixbox=\box94
+\pgfnodepartfivebox=\box95
 )))
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/frontendlayer
-/tikz/libraries\tikzlibrarycalc.code.tex
-File: tikzlibrarycalc.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
+rycalc.code.tex
+File: tikzlibrarycalc.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 )
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/frontendlayer
-/tikz/libraries\tikzlibrarydecorations.code.tex
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/modules\pgfmo
-duledecorations.code.tex
-\pgfdecoratedcompleteddistance=\dimen374
-\pgfdecoratedremainingdistance=\dimen375
-\pgfdecoratedinputsegmentcompleteddistance=\dimen376
-\pgfdecoratedinputsegmentremainingdistance=\dimen377
-\pgf@decorate@distancetomove=\dimen378
-\pgf@decorate@repeatstate=\count329
-\pgfdecorationsegmentamplitude=\dimen379
-\pgfdecorationsegmentlength=\dimen380
+(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
+rydecorations.code.tex
+(C:\Program Files\MiKTeX\tex/generic/pgf/modules\pgfmoduledecorations.code.tex
+\pgfdecoratedcompleteddistance=\dimen378
+\pgfdecoratedremainingdistance=\dimen379
+\pgfdecoratedinputsegmentcompleteddistance=\dimen380
+\pgfdecoratedinputsegmentremainingdistance=\dimen381
+\pgf@decorate@distancetomove=\dimen382
+\pgf@decorate@repeatstate=\count337
+\pgfdecorationsegmentamplitude=\dimen383
+\pgfdecorationsegmentlength=\dimen384
 )
-\tikz@lib@dec@box=\box94
+\tikz@lib@dec@box=\box96
 )
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/frontendlayer
-/tikz/libraries\tikzlibrarydecorations.pathmorphing.code.tex
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/libraries/dec
-orations\pgflibrarydecorations.pathmorphing.code.tex))
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/frontendlayer
-/tikz/libraries\tikzlibrarydecorations.shapes.code.tex
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/libraries/dec
-orations\pgflibrarydecorations.shapes.code.tex))
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/frontendlayer
-/tikz/libraries\tikzlibrarydecorations.pathreplacing.code.tex
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/libraries/dec
-orations\pgflibrarydecorations.pathreplacing.code.tex))
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/frontendlayer
-/tikz/libraries\tikzlibraryintersections.code.tex
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/libraries\pgf
-libraryintersections.code.tex
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/libraries\pgf
-libraryfpu.code.tex)
-\pgf@intersect@solutions=\count330
+(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
+rydecorations.pathmorphing.code.tex
+(C:\Program Files\MiKTeX\tex/generic/pgf/libraries/decorations\pgflibrarydecora
+tions.pathmorphing.code.tex))
+(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
+rydecorations.shapes.code.tex
+(C:\Program Files\MiKTeX\tex/generic/pgf/libraries/decorations\pgflibrarydecora
+tions.shapes.code.tex))
+(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
+rydecorations.pathreplacing.code.tex
+(C:\Program Files\MiKTeX\tex/generic/pgf/libraries/decorations\pgflibrarydecora
+tions.pathreplacing.code.tex))
+(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
+ryintersections.code.tex
+(C:\Program Files\MiKTeX\tex/generic/pgf/libraries\pgflibraryintersections.code
+.tex (C:\Program Files\MiKTeX\tex/generic/pgf/libraries\pgflibraryfpu.code.tex)
+\pgf@intersect@solutions=\count338
 )) (DOR-osztalylista.tex) (tantargyszinek.tex))
+LaTeX Font Info:    Trying to load font information for T1+cmss on input line 4
+.
+
+(C:\Program Files\MiKTeX\tex/latex/base\t1cmss.fd
+File: t1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
 
 LaTeX Warning: Unused global option(s):
     [a3paper].
@@ -1213,20 +973,19 @@ LaTeX Warning: Unused global option(s):
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
 LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
 LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Try loading font information for T1+cmss on input line 4.
- ("C:\Program Files\MiKTeX 2.9\tex/latex/base\t1cmss.fd"
-File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -1261,48 +1020,36 @@ File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\AtBeginShipoutBox=\box95
-
-(C:\Users\MolnarAttila\AppData\Roaming\MiKTeX\2.9\tex/context/base/mkii\supp-pd
-f.mkii
+(C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count331
-\scratchdimen=\dimen381
-\scratchbox=\box96
-\nofMPsegments=\count332
-\nofMParguments=\count333
-\everyMPshowfont=\toks48
-\MPscratchCnt=\count334
-\MPscratchDim=\dimen382
-\MPnumerator=\count335
-\makeMPintoPDFobject=\count336
-\everyMPtoPDFconversion=\toks49
-) ("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\epstopdf-base.sty"
-Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
-
-("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\grfext.sty"
-Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
-)
+\scratchcounter=\count339
+\scratchdimen=\dimen385
+\scratchbox=\box97
+\nofMPsegments=\count340
+\nofMParguments=\count341
+\everyMPshowfont=\toks49
+\MPscratchCnt=\count342
+\MPscratchDim=\dimen386
+\MPnumerator=\count343
+\makeMPintoPDFobject=\count344
+\everyMPtoPDFconversion=\toks50
+) (C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-38.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 456.
+85.
 )
-ABD: EveryShipout initializing macros
 
 LaTeX Font Warning: Font shape `T1/cmss/m/sc' in size <10> not available
 (Font)              Font shape `T1/cmr/m/sc' tried instead on input line 10.
 
 (DORFLESH.tex
-LaTeX Font Info:    Try loading font information for U+msa on input line 3.
- ("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
+LaTeX Font Info:    Trying to load font information for U+msa on input line 4.
+ (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 3.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 4.
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
+(C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )) (DORFLESH.tex)
 (DORFLESH.tex) (DORFLESH.tex) (DORFLESH.tex) (DORFLESH.tex) (DORFLESH.tex)
@@ -1311,23 +1058,27 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (DORFLESH.tex) (DORFLESH.tex) (DORFLESH.tex) (DORFLESH.tex) (DORFLESH.tex)
 (DORFLESH.tex) (DORFLESH.tex) (DORFLESH.tex) [1
 
-{C:/Users/MolnarAttila/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] (Dia
-kNezo.aux) ) 
+{C:/Users/Attila/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] (DiakNezo.aux)
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 53972 strings out of 492945
- 1097824 string characters out of 3135492
- 12534903 words of memory out of 13000000
- 57336 multiletter control sequences out of 15000+200000
- 536993 words of font info for 36 fonts, out of 3000000 for 9000
+ 43607 strings out of 479334
+ 883204 string characters out of 2866958
+ 12328765 words of memory out of 13000000
+ 60545 multiletter control sequences out of 15000+200000
+ 408085 words of font info for 39 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,17n,68p,1049b,2352s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\MolnarAttila\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jk
-nappen/ec/dpi600\ecsx1000.pk> <C:\Users\MolnarAttila\AppData\Local\MiKTeX\2.9\f
-onts/pk/ljfour/jknappen/ec/dpi600\ecss1000.pk> <C:\Users\MolnarAttila\AppData\L
-ocal\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1000.pk>
-Output written on DiakNezo.pdf (1 page, 185045 bytes).
+ 92i,17n,92p,1049b,1877s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\Attila\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecs
+x1000.pk> <C:\Users\Attila\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi
+600\ecss1000.pk> <C:\Users\Attila\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen
+/ec/dpi600\eccc1000.pk>
+Output written on DiakNezo.pdf (1 page, 159922 bytes).
 PDF statistics:
- 143 PDF objects out of 1000 (max. 8388607)
+ 144 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

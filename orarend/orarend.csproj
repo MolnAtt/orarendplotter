@@ -43,8 +43,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Csoport.cs" />
+    <Compile Include="DB_Beolvas.cs" />
+    <Compile Include="DebugConsole.cs" />
+    <Compile Include="LaTeX.cs" />
+    <Compile Include="Nyom.cs" />
+    <Compile Include="Osztály.cs" />
+    <Compile Include="Probléma.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="str2oszt.cs" />
+    <Compile Include="Színes.cs" />
+    <Compile Include="Tabolás.cs" />
+    <Compile Include="Tantárgy.cs" />
+    <Compile Include="Tanár.cs" />
+    <Compile Include="Terem.cs" />
+    <Compile Include="Óra.cs" />
+    <Compile Include="Órarend.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

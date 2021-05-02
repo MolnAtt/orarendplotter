@@ -24,3 +24,10 @@ C:\Users\MolnarAttila\Desktop\ORAREND\orarend\bin\Debug\orarend.pdb
 C:\Users\MolnarAttila\Desktop\ORAREND\orarend\obj\Debug\orarend.csprojAssemblyReference.cache
 C:\Users\MolnarAttila\Desktop\ORAREND\orarend\obj\Debug\orarend.exe
 C:\Users\MolnarAttila\Desktop\ORAREND\orarend\obj\Debug\orarend.pdb
+C:\Users\Attila\Desktop\orarendplotter\orarend\bin\Debug\orarend.exe.config
+C:\Users\Attila\Desktop\orarendplotter\orarend\bin\Debug\orarend.exe
+C:\Users\Attila\Desktop\orarendplotter\orarend\bin\Debug\orarend.pdb
+C:\Users\Attila\Desktop\orarendplotter\orarend\obj\Debug\orarend.csprojAssemblyReference.cache
+C:\Users\Attila\Desktop\orarendplotter\orarend\obj\Debug\orarend.csproj.CoreCompileInputs.cache
+C:\Users\Attila\Desktop\orarendplotter\orarend\obj\Debug\orarend.exe
+C:\Users\Attila\Desktop\orarendplotter\orarend\obj\Debug\orarend.pdb
